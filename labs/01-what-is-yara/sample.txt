@@ -1,0 +1,2 @@
+This is a harmless practice file for Lab 01.
+Its marker is HELLO_YARA.
