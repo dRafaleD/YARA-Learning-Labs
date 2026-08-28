@@ -1,0 +1,4 @@
+This is a harmless YARA practice file.
+
+DOWNLOAD_FILE
+REMOTE_SERVER
