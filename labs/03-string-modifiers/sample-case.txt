@@ -1,0 +1,3 @@
+This is a harmless YARA practice file.
+
+hello_yara
