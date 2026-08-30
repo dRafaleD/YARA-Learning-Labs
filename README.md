@@ -24,8 +24,9 @@ A YARA match is a signal that a rule's condition was satisfied. It is **not auto
 | --- | --- | --- |
 | [01 - What is YARA?](labs/01-what-is-yara/notes.md) | Rule fundamentals | `rule`, `strings`, identifiers, and `condition` |
 | [02 - Multiple Strings and Conditions](labs/02-multiple-strings-and-conditions/notes.md) | Combining indicators | `and`, `or`, `any of them`, `all of them`, and counted matches |
+| [03 - String Modifiers](labs/03-string-modifiers/notes.md) | Matching text variations | `nocase`, `ascii`, and `wide` |
 
-Future labs may cover string modifiers, hexadecimal byte patterns, metadata, PE-aware conditions, testing, and false-positive reduction. They will be added gradually as real exercises rather than empty folders.
+Future labs may cover hexadecimal byte patterns, metadata, PE-aware conditions, testing, and false-positive reduction. They will be added gradually as real exercises rather than empty folders.
 
 ## Repository structure
 
@@ -37,20 +38,25 @@ YARA-Learning-Labs/
 │   │   ├── notes.md
 │   │   ├── hello.yar
 │   │   └── sample.txt
-│   └── 02-multiple-strings-and-conditions/
+│   ├── 02-multiple-strings-and-conditions/
+│   │   ├── notes.md
+│   │   ├── multiple_strings.yar
+│   │   ├── sample-match.txt
+│   │   └── sample-no-match.txt
+│   └── 03-string-modifiers/
 │       ├── notes.md
-│       ├── multiple_strings.yar
-│       ├── sample-match.txt
+│       ├── string_modifiers.yar
+│       ├── sample-case.txt
 │       └── sample-no-match.txt
 ├── resources.md
 └── LICENSE
 ```
 
-Start with Lab 01, then continue to Lab 02 to see how several indicators can be combined into a more selective condition.
+Start with Lab 01, continue with Lab 02 to combine indicators, then use Lab 03 to see how string modifiers change matching behavior.
 
 ## Safety note
 
-The current labs use only plain text created for practice. They contain no malware sample, offensive payload, or rule for an active malicious campaign. Do not treat unknown files as safe merely because a YARA scan returns no match, and analyze suspicious material only in an appropriately isolated environment.
+The current labs use only harmless practice text and locally generated test data. They contain no malware sample, offensive payload, or rule for an active malicious campaign. Do not treat unknown files as safe merely because a YARA scan returns no match, and analyze suspicious material only in an appropriately isolated environment.
 
 ## References / Credits
 
@@ -79,8 +85,9 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösteren bir si
 | --- | --- | --- |
 | [01 - YARA Nedir?](labs/01-what-is-yara/notes.md) | Rule temelleri | `rule`, `strings`, tanımlayıcılar ve `condition` |
 | [02 - Birden Fazla String ve Koşullar](labs/02-multiple-strings-and-conditions/notes.md) | Göstergeleri birleştirmek | `and`, `or`, `any of them`, `all of them` ve sayısal eşleşmeler |
+| [03 - String Modifier'ları](labs/03-string-modifiers/notes.md) | Metin gösterimlerini eşleştirmek | `nocase`, `ascii` ve `wide` |
 
-İleride string modifier'ları, hexadecimal byte pattern'ları, metadata, PE tabanlı koşullar, rule testleri ve false-positive azaltma konuları incelenebilir. Bu konular boş klasörler olarak değil, gerçek lab çalışmaları hazır oldukça eklenecektir.
+İleride hexadecimal byte pattern'ları, metadata, PE tabanlı koşullar, rule testleri ve false-positive azaltma konuları incelenebilir. Bu konular boş klasörler olarak değil, gerçek lab çalışmaları hazır oldukça eklenecektir.
 
 ## Repo yapısı
 
@@ -92,20 +99,25 @@ YARA-Learning-Labs/
 │   │   ├── notes.md
 │   │   ├── hello.yar
 │   │   └── sample.txt
-│   └── 02-multiple-strings-and-conditions/
+│   ├── 02-multiple-strings-and-conditions/
+│   │   ├── notes.md
+│   │   ├── multiple_strings.yar
+│   │   ├── sample-match.txt
+│   │   └── sample-no-match.txt
+│   └── 03-string-modifiers/
 │       ├── notes.md
-│       ├── multiple_strings.yar
-│       ├── sample-match.txt
+│       ├── string_modifiers.yar
+│       ├── sample-case.txt
 │       └── sample-no-match.txt
 ├── resources.md
 └── LICENSE
 ```
 
-Önce Lab 01 ile başlayın; ardından birden fazla göstergenin daha seçici bir koşul oluşturmak için nasıl birleştirildiğini görmek için Lab 02'ye geçin.
+Önce Lab 01 ile başlayın, Lab 02'de göstergeleri birleştirin ve ardından Lab 03'te string modifier'larının eşleşme davranışını nasıl değiştirdiğini inceleyin.
 
 ## Güvenlik notu
 
-Mevcut lab'ler yalnızca alıştırma için oluşturulmuş düz metin kullanır. Malware örneği, saldırı amaçlı payload veya etkin bir zararlı kampanyaya yönelik rule içermez. Bir YARA taramasının eşleşme bulmaması, bilinmeyen bir dosyanın güvenli olduğu anlamına gelmez. Şüpheli materyalleri yalnızca uygun şekilde izole edilmiş bir ortamda inceleyin.
+Mevcut lab'ler yalnızca zararsız alıştırma metinleri ve yerel olarak oluşturulan test verileri kullanır. Malware örneği, saldırı amaçlı payload veya etkin bir zararlı kampanyaya yönelik rule içermez. Bir YARA taramasının eşleşme bulmaması, bilinmeyen bir dosyanın güvenli olduğu anlamına gelmez. Şüpheli materyalleri yalnızca uygun şekilde izole edilmiş bir ortamda inceleyin.
 
 ## Kaynaklar / Teşekkür
 
