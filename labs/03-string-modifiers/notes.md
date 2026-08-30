@@ -78,24 +78,32 @@ $marker = "WIDE_MARKER" ascii wide
 
 This tells YARA to search for both the ASCII form and the wide form.
 
-The committed `sample-wide.txt` is a harmless UTF-16LE practice file containing `WIDE_MARKER`. Its bytes therefore resemble:
+To create a harmless UTF-16LE practice file locally, run from the repository root:
+
+```console
+python -c "open('labs/03-string-modifiers/sample-wide.bin','wb').write('WIDE_MARKER'.encode('utf-16le'))"
+```
+
+Its bytes begin like this:
 
 ```text
 57 00 49 00 44 00 45 00 ...
  W     I     D     E
 ```
 
-Run:
+Now scan it:
 
 ```console
-yara labs/03-string-modifiers/string_modifiers.yar labs/03-string-modifiers/sample-wide.txt
+yara labs/03-string-modifiers/string_modifiers.yar labs/03-string-modifiers/sample-wide.bin
 ```
 
 Expected match:
 
 ```text
-ASCII_Wide_Demo labs/03-string-modifiers/sample-wide.txt
+ASCII_Wide_Demo labs/03-string-modifiers/sample-wide.bin
 ```
+
+The generated `sample-wide.bin` is only a local practice file and does not need to be committed.
 
 > `wide` should not be understood as a complete Unicode text engine. For a basic YARA text string, it searches the two-byte form produced by inserting a zero byte after each character. This is especially useful for many UTF-16LE-like strings found in Windows files.
 
@@ -198,24 +206,32 @@ $marker = "WIDE_MARKER" ascii wide
 
 Bu kullanım YARA'ya hem ASCII hem de wide gösterimi aramasını söyler.
 
-Repodaki `sample-wide.txt`, `WIDE_MARKER` içeren tamamen zararsız bir UTF-16LE alıştırma dosyasıdır. Bu nedenle byte'ları yaklaşık olarak şöyle görünür:
+Zararsız UTF-16LE alıştırma dosyasını repo kök dizininde yerel olarak oluşturmak için:
+
+```console
+python -c "open('labs/03-string-modifiers/sample-wide.bin','wb').write('WIDE_MARKER'.encode('utf-16le'))"
+```
+
+Byte'ların başlangıcı yaklaşık olarak şöyle görünür:
 
 ```text
 57 00 49 00 44 00 45 00 ...
  W     I     D     E
 ```
 
-Çalıştırın:
+Ardından tarayın:
 
 ```console
-yara labs/03-string-modifiers/string_modifiers.yar labs/03-string-modifiers/sample-wide.txt
+yara labs/03-string-modifiers/string_modifiers.yar labs/03-string-modifiers/sample-wide.bin
 ```
 
 Beklenen eşleşme:
 
 ```text
-ASCII_Wide_Demo labs/03-string-modifiers/sample-wide.txt
+ASCII_Wide_Demo labs/03-string-modifiers/sample-wide.bin
 ```
+
+Oluşturulan `sample-wide.bin` yalnızca yerel alıştırma dosyasıdır; repoya commit edilmesine gerek yoktur.
 
 > `wide`, tam kapsamlı bir Unicode metin motoru olarak düşünülmemelidir. Temel YARA text string'lerinde karakterlerin arasına sıfır baytı eklenmiş iki baytlık gösterimi arar. Bu özellikle Windows dosyalarında görülen birçok UTF-16LE benzeri string için kullanışlıdır.
 
