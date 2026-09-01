@@ -25,8 +25,9 @@ A YARA match is a signal that a rule's condition was satisfied. It is **not auto
 | [01 - What is YARA?](labs/01-what-is-yara/notes.md) | Rule fundamentals | `rule`, `strings`, identifiers, and `condition` |
 | [02 - Multiple Strings and Conditions](labs/02-multiple-strings-and-conditions/notes.md) | Combining indicators | `and`, `or`, `any of them`, `all of them`, and counted matches |
 | [03 - String Modifiers](labs/03-string-modifiers/notes.md) | Matching text variations | `nocase`, `ascii`, and `wide` |
+| [04 - Hexadecimal Strings](labs/04-hexadecimal-strings/notes.md) | Matching raw bytes | Exact byte sequences and `??` wildcards |
 
-Future labs may cover hexadecimal byte patterns, metadata, PE-aware conditions, testing, and false-positive reduction. They will be added gradually as real exercises rather than empty folders.
+Future labs may cover metadata, PE-aware conditions, testing, and false-positive reduction. They will be added gradually as real exercises rather than empty folders.
 
 ## Repository structure
 
@@ -52,7 +53,7 @@ YARA-Learning-Labs/
 └── LICENSE
 ```
 
-Start with Lab 01, continue with Lab 02 to combine indicators, then use Lab 03 to see how string modifiers change matching behavior.
+Start with Lab 01, continue with Lab 02 to combine indicators, use Lab 03 to see how string modifiers change matching behavior, and continue with Lab 04 to begin matching raw byte patterns.
 
 ## Safety note
 
@@ -86,8 +87,9 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösteren bir si
 | [01 - YARA Nedir?](labs/01-what-is-yara/notes.md) | Rule temelleri | `rule`, `strings`, tanımlayıcılar ve `condition` |
 | [02 - Birden Fazla String ve Koşullar](labs/02-multiple-strings-and-conditions/notes.md) | Göstergeleri birleştirmek | `and`, `or`, `any of them`, `all of them` ve sayısal eşleşmeler |
 | [03 - String Modifier'ları](labs/03-string-modifiers/notes.md) | Metin gösterimlerini eşleştirmek | `nocase`, `ascii` ve `wide` |
+| [04 - Hexadecimal String'ler](labs/04-hexadecimal-strings/notes.md) | Ham byte eşleştirmek | Tam byte dizileri ve `??` wildcard'ları |
 
-İleride hexadecimal byte pattern'ları, metadata, PE tabanlı koşullar, rule testleri ve false-positive azaltma konuları incelenebilir. Bu konular boş klasörler olarak değil, gerçek lab çalışmaları hazır oldukça eklenecektir.
+İleride metadata, PE tabanlı koşullar, rule testleri ve false-positive azaltma konuları incelenebilir. Bu konular boş klasörler olarak değil, gerçek lab çalışmaları hazır oldukça eklenecektir.
 
 ## Repo yapısı
 
@@ -113,7 +115,7 @@ YARA-Learning-Labs/
 └── LICENSE
 ```
 
-Önce Lab 01 ile başlayın, Lab 02'de göstergeleri birleştirin ve ardından Lab 03'te string modifier'larının eşleşme davranışını nasıl değiştirdiğini inceleyin.
+Önce Lab 01 ile başlayın, Lab 02'de göstergeleri birleştirin, Lab 03'te string modifier'larının eşleşme davranışını inceleyin ve Lab 04 ile ham byte pattern'larını eşleştirmeye başlayın.
 
 ## Güvenlik notu
 
