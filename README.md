@@ -16,7 +16,7 @@ Each lab introduces one concept, provides harmless examples, and records the mai
 
 YARA is a rule-based pattern-matching tool used to search files or memory for predefined indicators such as strings, byte patterns, and structural conditions. A rule describes what YARA should look for and the condition that must be true before YARA reports a match.
 
-A YARA match is a signal that a rule's condition was satisfied. It is **not automatically proof that a file is malware**. A match must be interpreted together with the rule's quality, the file's context, and other analysis results.
+A YARA match means that a rule's condition was satisfied. It is **not automatically proof that a file is malware**. A match must be interpreted together with the rule's quality, the file's context, and other analysis results.
 
 ## Labs
 
@@ -78,7 +78,7 @@ Her lab tek bir kavramı tanıtır, zararsız örnekler sunar ve eksiksiz bir ku
 
 YARA, dosya veya bellek içinde önceden tanımlanmış string, byte pattern ve yapısal koşullar gibi göstergeleri aramak için kullanılan kural tabanlı bir pattern-matching aracıdır. Bir rule, YARA'nın neyi arayacağını ve eşleşme bildirmesi için hangi koşulun doğru olması gerektiğini tanımlar.
 
-Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösteren bir sinyaldir. Bir dosyanın malware olduğunun **tek başına kanıtı değildir**. Eşleşme; rule'un kalitesi, dosyanın bağlamı ve diğer analiz sonuçlarıyla birlikte değerlendirilmelidir.
+Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir dosyanın malware olduğunun **tek başına kanıtı değildir**. Eşleşme; rule'un kalitesi, dosyanın bağlamı ve diğer analiz sonuçlarıyla birlikte değerlendirilmelidir.
 
 ## Lab'ler
 
