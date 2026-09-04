@@ -26,8 +26,9 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [02 - Multiple Strings and Conditions](labs/02-multiple-strings-and-conditions/notes.md) | Combining indicators | `and`, `or`, `any of them`, `all of them`, and counted matches |
 | [03 - String Modifiers](labs/03-string-modifiers/notes.md) | Matching text variations | `nocase`, `ascii`, and `wide` |
 | [04 - Hexadecimal Strings](labs/04-hexadecimal-strings/notes.md) | Matching raw bytes | Exact byte sequences and `??` wildcards |
+| [05 - Rule Metadata](labs/05-rule-metadata/notes.md) | Describing and organizing rules | `meta` fields and the difference between description and detection logic |
 
-Future labs may cover metadata, PE-aware conditions, testing, and false-positive reduction. They will be added gradually as real exercises rather than empty folders.
+Future labs may cover PE-aware conditions, testing, regular expressions, and false-positive reduction. They will be added gradually as real exercises rather than empty folders.
 
 ## Repository structure
 
@@ -36,24 +37,15 @@ YARA-Learning-Labs/
 ├── README.md
 ├── labs/
 │   ├── 01-what-is-yara/
-│   │   ├── notes.md
-│   │   ├── hello.yar
-│   │   └── sample.txt
 │   ├── 02-multiple-strings-and-conditions/
-│   │   ├── notes.md
-│   │   ├── multiple_strings.yar
-│   │   ├── sample-match.txt
-│   │   └── sample-no-match.txt
-│   └── 03-string-modifiers/
-│       ├── notes.md
-│       ├── string_modifiers.yar
-│       ├── sample-case.txt
-│       └── sample-no-match.txt
+│   ├── 03-string-modifiers/
+│   ├── 04-hexadecimal-strings/
+│   └── 05-rule-metadata/
 ├── resources.md
 └── LICENSE
 ```
 
-Start with Lab 01, continue with Lab 02 to combine indicators, use Lab 03 to see how string modifiers change matching behavior, and continue with Lab 04 to begin matching raw byte patterns.
+Start with Lab 01 and continue in order. Each lab adds one small concept and keeps the samples harmless and easy to inspect.
 
 ## Safety note
 
@@ -88,8 +80,9 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [02 - Birden Fazla String ve Koşullar](labs/02-multiple-strings-and-conditions/notes.md) | Göstergeleri birleştirmek | `and`, `or`, `any of them`, `all of them` ve sayısal eşleşmeler |
 | [03 - String Modifier'ları](labs/03-string-modifiers/notes.md) | Metin gösterimlerini eşleştirmek | `nocase`, `ascii` ve `wide` |
 | [04 - Hexadecimal String'ler](labs/04-hexadecimal-strings/notes.md) | Ham byte eşleştirmek | Tam byte dizileri ve `??` wildcard'ları |
+| [05 - Rule Metadata](labs/05-rule-metadata/notes.md) | Rule'ları açıklamak ve düzenlemek | `meta` alanları ile açıklama ve detection mantığı arasındaki fark |
 
-İleride metadata, PE tabanlı koşullar, rule testleri ve false-positive azaltma konuları incelenebilir. Bu konular boş klasörler olarak değil, gerçek lab çalışmaları hazır oldukça eklenecektir.
+İleride PE tabanlı koşullar, rule testleri, regular expression'lar ve false-positive azaltma konuları incelenebilir. Bu konular boş klasörler olarak değil, gerçek lab çalışmaları hazır oldukça eklenecektir.
 
 ## Repo yapısı
 
@@ -98,24 +91,15 @@ YARA-Learning-Labs/
 ├── README.md
 ├── labs/
 │   ├── 01-what-is-yara/
-│   │   ├── notes.md
-│   │   ├── hello.yar
-│   │   └── sample.txt
 │   ├── 02-multiple-strings-and-conditions/
-│   │   ├── notes.md
-│   │   ├── multiple_strings.yar
-│   │   ├── sample-match.txt
-│   │   └── sample-no-match.txt
-│   └── 03-string-modifiers/
-│       ├── notes.md
-│       ├── string_modifiers.yar
-│       ├── sample-case.txt
-│       └── sample-no-match.txt
+│   ├── 03-string-modifiers/
+│   ├── 04-hexadecimal-strings/
+│   └── 05-rule-metadata/
 ├── resources.md
 └── LICENSE
 ```
 
-Önce Lab 01 ile başlayın, Lab 02'de göstergeleri birleştirin, Lab 03'te string modifier'larının eşleşme davranışını inceleyin ve Lab 04 ile ham byte pattern'larını eşleştirmeye başlayın.
+Lab 01'den başlayıp sırayla ilerleyin. Her lab tek bir yeni kavram ekler ve örnekleri zararsız, kolay incelenebilir halde tutar.
 
 ## Güvenlik notu
 
