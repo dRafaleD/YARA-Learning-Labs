@@ -1,0 +1,2 @@
+This is a harmless training file.
+Marker: YARA_METADATA_LAB
