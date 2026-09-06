@@ -1,0 +1,4 @@
+Training record
+Ticket: LAB-2048
+User: user_rafale
+This file is harmless and exists only for YARA practice.
