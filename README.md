@@ -27,8 +27,9 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [03 - String Modifiers](labs/03-string-modifiers/notes.md) | Matching text variations | `nocase`, `ascii`, and `wide` |
 | [04 - Hexadecimal Strings](labs/04-hexadecimal-strings/notes.md) | Matching raw bytes | Exact byte sequences and `??` wildcards |
 | [05 - Rule Metadata](labs/05-rule-metadata/notes.md) | Describing and organizing rules | `meta` fields and the difference between description and detection logic |
+| [06 - Regular Expressions](labs/06-regular-expressions/notes.md) | Matching variable text patterns | Regex basics, repetition ranges, and combining regex with conditions |
 
-Future labs may cover PE-aware conditions, testing, regular expressions, and false-positive reduction. They will be added gradually as real exercises rather than empty folders.
+Future labs may cover PE-aware conditions, testing, and false-positive reduction. They will be added gradually as real exercises rather than empty folders.
 
 ## Repository structure
 
@@ -40,7 +41,8 @@ YARA-Learning-Labs/
 │   ├── 02-multiple-strings-and-conditions/
 │   ├── 03-string-modifiers/
 │   ├── 04-hexadecimal-strings/
-│   └── 05-rule-metadata/
+│   ├── 05-rule-metadata/
+│   └── 06-regular-expressions/
 ├── resources.md
 └── LICENSE
 ```
@@ -81,8 +83,9 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [03 - String Modifier'ları](labs/03-string-modifiers/notes.md) | Metin gösterimlerini eşleştirmek | `nocase`, `ascii` ve `wide` |
 | [04 - Hexadecimal String'ler](labs/04-hexadecimal-strings/notes.md) | Ham byte eşleştirmek | Tam byte dizileri ve `??` wildcard'ları |
 | [05 - Rule Metadata](labs/05-rule-metadata/notes.md) | Rule'ları açıklamak ve düzenlemek | `meta` alanları ile açıklama ve detection mantığı arasındaki fark |
+| [06 - Regular Expression'lar](labs/06-regular-expressions/notes.md) | Değişken metin pattern'larını eşleştirmek | Regex temelleri, tekrar aralıkları ve regex'i condition ile birleştirmek |
 
-İleride PE tabanlı koşullar, rule testleri, regular expression'lar ve false-positive azaltma konuları incelenebilir. Bu konular boş klasörler olarak değil, gerçek lab çalışmaları hazır oldukça eklenecektir.
+İleride PE tabanlı koşullar, rule testleri ve false-positive azaltma konuları incelenebilir. Bu konular boş klasörler olarak değil, gerçek lab çalışmaları hazır oldukça eklenecektir.
 
 ## Repo yapısı
 
@@ -94,7 +97,8 @@ YARA-Learning-Labs/
 │   ├── 02-multiple-strings-and-conditions/
 │   ├── 03-string-modifiers/
 │   ├── 04-hexadecimal-strings/
-│   └── 05-rule-metadata/
+│   ├── 05-rule-metadata/
+│   └── 06-regular-expressions/
 ├── resources.md
 └── LICENSE
 ```
