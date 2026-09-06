@@ -1,0 +1,4 @@
+Training record
+Ticket: LAB-20A8
+User: guest-user
+This file should not match the Lab 06 rule.
