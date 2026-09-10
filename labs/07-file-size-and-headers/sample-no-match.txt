@@ -1,0 +1,3 @@
+ZZ
+This is a harmless non-matching training sample for YARA Lab 07.
+It does not start with the MZ byte pattern.
