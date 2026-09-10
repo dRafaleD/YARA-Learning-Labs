@@ -1,0 +1,3 @@
+MZ
+This is a harmless training sample for YARA Lab 07.
+It only starts with the characters MZ so we can practice checking the first two bytes.
