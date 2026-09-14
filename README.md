@@ -30,8 +30,9 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [06 - Regular Expressions](labs/06-regular-expressions/notes.md) | Matching variable text patterns | Regex basics, repetition ranges, and combining regex with conditions |
 | [07 - File Size and Header Checks](labs/07-file-size-and-headers/notes.md) | Structural conditions | `filesize`, `uint16(0)`, offsets, and simple header checks |
 | [08 - PE Module Basics](labs/08-pe-module-basics/notes.md) | PE-aware conditions | `import "pe"`, section count, architecture, and combining parsed PE data with raw header checks |
+| [09 - PE Imports and Sections](labs/09-pe-imports-and-sections/notes.md) | PE structure inspection | `pe.imports()`, section metadata, and structure-aware filtering |
 
-Future labs may cover imports, sections, testing, and false-positive reduction. They will be added gradually as real exercises rather than empty folders.
+Future labs may cover rule testing, entry points, section characteristics, and false-positive reduction. They will be added gradually as real exercises rather than empty folders.
 
 ## Repository structure
 
@@ -46,7 +47,8 @@ YARA-Learning-Labs/
 │   ├── 05-rule-metadata/
 │   ├── 06-regular-expressions/
 │   ├── 07-file-size-and-headers/
-│   └── 08-pe-module-basics/
+│   ├── 08-pe-module-basics/
+│   └── 09-pe-imports-and-sections/
 ├── resources.md
 └── LICENSE
 ```
@@ -90,8 +92,9 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [06 - Regular Expression'lar](labs/06-regular-expressions/notes.md) | Değişken metin pattern'larını eşleştirmek | Regex temelleri, tekrar aralıkları ve regex'i condition ile birleştirmek |
 | [07 - Dosya Boyutu ve Header Kontrolleri](labs/07-file-size-and-headers/notes.md) | Yapısal koşullar | `filesize`, `uint16(0)`, offset ve basit header kontrolleri |
 | [08 - PE Module Temelleri](labs/08-pe-module-basics/notes.md) | PE-aware koşullar | `import "pe"`, section sayısı, mimari ve parse edilmiş PE verisini ham header kontrolleriyle birleştirmek |
+| [09 - PE Import'ları ve Section'lar](labs/09-pe-imports-and-sections/notes.md) | PE yapısını incelemek | `pe.imports()`, section metadata'sı ve structure-aware filtreleme |
 
-İleride import'lar, section'lar, rule testleri ve false-positive azaltma konuları incelenebilir. Bu konular boş klasörler olarak değil, gerçek lab çalışmaları hazır oldukça eklenecektir.
+İleride rule testleri, entry point'ler, section özellikleri ve false-positive azaltma konuları incelenebilir. Bu konular boş klasörler olarak değil, gerçek lab çalışmaları hazır oldukça eklenecektir.
 
 ## Repo yapısı
 
@@ -106,7 +109,8 @@ YARA-Learning-Labs/
 │   ├── 05-rule-metadata/
 │   ├── 06-regular-expressions/
 │   ├── 07-file-size-and-headers/
-│   └── 08-pe-module-basics/
+│   ├── 08-pe-module-basics/
+│   └── 09-pe-imports-and-sections/
 ├── resources.md
 └── LICENSE
 ```
