@@ -1,0 +1,3 @@
+This is a harmless Lab 09 practice file.
+It contains GetLastError and KERNEL32.dll as ordinary text.
+It is not a Portable Executable, so PE import checks should not match.
