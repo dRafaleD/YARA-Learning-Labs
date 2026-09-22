@@ -300,7 +300,7 @@ condition           -> combine clues into one decision
 
 A YARA match still means only that the rule condition was satisfied. It is not automatically proof that a file is malicious.
 
-Later labs can add entry points, section characteristics, and false-positive reduction. Those topics are left out of this lab on purpose.
+Lab 10 continues from here with entry points and section characteristics.
 
 ---
 
@@ -600,4 +600,4 @@ condition         -> ipuçlarını tek kararda birleştirir
 
 Bir YARA eşleşmesinin yalnızca rule koşulunun sağlandığını gösterdiğini unutmamak gerekir; tek başına malware kanıtı değildir.
 
-Entry point, section characteristics ve false-positive azaltma sonraki lab'lere bırakılmıştır. Bu lab'e bilinçli olarak alınmamıştır.
+Lab 10, buradan entry point ve section characteristics ile devam eder.
