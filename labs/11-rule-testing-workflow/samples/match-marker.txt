@@ -1,0 +1,1 @@
+This harmless file contains YARA_LAB_11_MARKER for testing.
