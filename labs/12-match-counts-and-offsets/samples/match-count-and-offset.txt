@@ -1,0 +1,2 @@
+YARA12 training data for a harmless lab.
+This second training marker makes the count condition true.
