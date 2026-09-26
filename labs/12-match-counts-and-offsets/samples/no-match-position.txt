@@ -1,0 +1,1 @@
+HEADER YARA12 training appears only once here.
