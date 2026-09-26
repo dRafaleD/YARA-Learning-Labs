@@ -32,6 +32,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [08 - PE Module Basics](labs/08-pe-module-basics/notes.md) | PE-aware conditions | `import "pe"`, section count, architecture, and combining parsed PE data with raw header checks |
 | [09 - PE Imports and Sections](labs/09-pe-imports-and-sections/notes.md) | PE structure inspection | `pe.imports()`, section metadata, and structure-aware filtering |
 | [10 - PE Entry Point and Section Flags](labs/10-pe-entry-point-and-section-flags/notes.md) | Entry point and permissions | `pe.entry_point`, `pe.section_index()`, and `SECTION_MEM_EXECUTE` |\n| [11 - Rule Testing Workflow](labs/11-rule-testing-workflow/notes.md) | Testing and validation | Positive/negative samples, recursive scans, and inspecting matching strings |
+| [12 - Match Counts and Offsets](labs/12-match-counts-and-offsets/notes.md) | Match position and frequency | `#identifier`, `@identifier[n]`, and positional conditions |
 
 Future labs may cover dedicated rule-testing workflow. They will be added gradually as real exercises rather than empty folders.
 
@@ -50,7 +51,8 @@ YARA-Learning-Labs/
 │   ├── 07-file-size-and-headers/
 │   ├── 08-pe-module-basics/
 │   ├── 09-pe-imports-and-sections/
-│   ├── 10-pe-entry-point-and-section-flags/\n│   └── 11-rule-testing-workflow/
+│   ├── 10-pe-entry-point-and-section-flags/\n│   ├── 11-rule-testing-workflow/
+│   └── 12-match-counts-and-offsets/
 ├── resources.md
 └── LICENSE
 ```
@@ -96,6 +98,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [08 - PE Module Temelleri](labs/08-pe-module-basics/notes.md) | PE-aware koşullar | `import "pe"`, section sayısı, mimari ve parse edilmiş PE verisini ham header kontrolleriyle birleştirmek |
 | [09 - PE Import'ları ve Section'lar](labs/09-pe-imports-and-sections/notes.md) | PE yapısını incelemek | `pe.imports()`, section metadata'sı ve structure-aware filtreleme |
 | [10 - PE Entry Point ve Section Bayrakları](labs/10-pe-entry-point-and-section-flags/notes.md) | Entry point ve izinler | `pe.entry_point`, `pe.section_index()` ve `SECTION_MEM_EXECUTE` |\n| [11 - Rule Test İş Akışı](labs/11-rule-testing-workflow/notes.md) | Test ve doğrulama | Pozitif/negatif örnekler, recursive tarama ve eşleşen stringleri inceleme |
+| [12 - Eşleşme Sayıları ve Offsetler](labs/12-match-counts-and-offsets/notes.md) | Eşleşme konumu ve sıklığı | `#identifier`, `@identifier[n]` ve positional condition'lar |
 
 İleride ayrı bir rule-test iş akışı incelenebilir. Bu konular boş klasörler olarak değil, gerçek lab çalışmaları hazır oldukça eklenecektir.
 
@@ -114,7 +117,9 @@ YARA-Learning-Labs/
 │   ├── 07-file-size-and-headers/
 │   ├── 08-pe-module-basics/
 │   ├── 09-pe-imports-and-sections/
-│   └── 10-pe-entry-point-and-section-flags/
+│   ├── 10-pe-entry-point-and-section-flags/
+│   ├── 11-rule-testing-workflow/
+│   └── 12-match-counts-and-offsets/
 ├── resources.md
 └── LICENSE
 ```
