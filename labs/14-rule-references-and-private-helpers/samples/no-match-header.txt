@@ -1,0 +1,2 @@
+HEADER alpha beta
+This sample has the content markers but not the expected LAB14 header.
