@@ -1,0 +1,2 @@
+LAB14 alpha beta
+This is harmless training data for Lab 14.
