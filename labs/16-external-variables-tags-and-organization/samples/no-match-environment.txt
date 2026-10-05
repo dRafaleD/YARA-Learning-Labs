@@ -1,0 +1,2 @@
+YARA_LAB16
+This sample should not match Lab16_Tagged_Training_Rule when environment is not lab.
