@@ -36,6 +36,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [13 - String Sets and Threshold Conditions](labs/13-string-sets-and-thresholds/notes.md) | Grouping indicators | Prefix groups, `n of (...)`, and threshold-based conditions |
 | [14 - Rule References and Private Helper Rules](labs/14-rule-references-and-private-helpers/notes.md) | Modular rule logic | Rule references, `private rule`, and reusable helper conditions |
 | [15 - ELF Module Basics](labs/15-elf-module-basics/notes.md) | ELF-aware detection | `import "elf"`, ELF type, architecture, entry point, and structure-aware conditions |
+| [16 - External Variables, Tags and Rule Organization](labs/16-external-variables-tags-and-organization/notes.md) | Rule-set organization | External variables, tags, scan configuration, and reproducible workflows |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -58,7 +59,8 @@ YARA-Learning-Labs/
 │   ├── 12-match-counts-and-offsets/
 │   ├── 13-string-sets-and-thresholds/
 │   ├── 14-rule-references-and-private-helpers/
-│   └── 15-elf-module-basics/
+│   ├── 15-elf-module-basics/
+│   └── 16-external-variables-tags-and-organization/
 ├── resources.md
 └── LICENSE
 ```
@@ -108,6 +110,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [13 - String Grupları ve Threshold Koşulları](labs/13-string-sets-and-thresholds/notes.md) | Indicator gruplama | Prefix grupları, `n of (...)` ve threshold tabanlı condition'lar |
 | [14 - Rule Referansları ve Private Helper Rule'lar](labs/14-rule-references-and-private-helpers/notes.md) | Modüler rule mantığı | Rule reference, `private rule` ve reusable helper condition'lar |
 | [15 - ELF Module Temelleri](labs/15-elf-module-basics/notes.md) | ELF-aware detection | `import "elf"`, ELF type, architecture, entry point ve structure-aware condition'lar |
+| [16 - External Variable, Tag ve Rule Organizasyonu](labs/16-external-variables-tags-and-organization/notes.md) | Rule-set organizasyonu | External variable, tag, scan configuration ve reproducible workflow |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
