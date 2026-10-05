@@ -1,0 +1,4 @@
+YARA_LAB16
+This harmless sample is intended for environment=lab.
+alpha16
+beta16
