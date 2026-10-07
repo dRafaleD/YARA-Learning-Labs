@@ -1,0 +1,4 @@
+LAB17
+alpha17
+beta17
+harmless modular-rule training sample
