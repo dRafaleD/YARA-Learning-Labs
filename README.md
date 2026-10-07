@@ -37,6 +37,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [14 - Rule References and Private Helper Rules](labs/14-rule-references-and-private-helpers/notes.md) | Modular rule logic | Rule references, `private rule`, and reusable helper conditions |
 | [15 - ELF Module Basics](labs/15-elf-module-basics/notes.md) | ELF-aware detection | `import "elf"`, ELF type, architecture, entry point, and structure-aware conditions |
 | [16 - External Variables, Tags and Rule Organization](labs/16-external-variables-tags-and-organization/notes.md) | Rule-set organization | External variables, tags, scan configuration, and reproducible workflows |
+| [17 - Include Files, Modular Rule Sets and Dependencies](labs/17-includes-modular-rules-and-dependencies/notes.md) | Multi-file rule organization | `include`, shared helpers, dependencies, runbooks, and packaging |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -60,7 +61,8 @@ YARA-Learning-Labs/
 │   ├── 13-string-sets-and-thresholds/
 │   ├── 14-rule-references-and-private-helpers/
 │   ├── 15-elf-module-basics/
-│   └── 16-external-variables-tags-and-organization/
+│   ├── 16-external-variables-tags-and-organization/
+│   └── 17-includes-modular-rules-and-dependencies/
 ├── resources.md
 └── LICENSE
 ```
@@ -111,6 +113,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [14 - Rule Referansları ve Private Helper Rule'lar](labs/14-rule-references-and-private-helpers/notes.md) | Modüler rule mantığı | Rule reference, `private rule` ve reusable helper condition'lar |
 | [15 - ELF Module Temelleri](labs/15-elf-module-basics/notes.md) | ELF-aware detection | `import "elf"`, ELF type, architecture, entry point ve structure-aware condition'lar |
 | [16 - External Variable, Tag ve Rule Organizasyonu](labs/16-external-variables-tags-and-organization/notes.md) | Rule-set organizasyonu | External variable, tag, scan configuration ve reproducible workflow |
+| [17 - Include Dosyaları ve Modüler Rule Setleri](labs/17-includes-modular-rules-and-dependencies/notes.md) | Multi-file rule organizasyonu | `include`, shared helper, dependency, runbook ve packaging |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
