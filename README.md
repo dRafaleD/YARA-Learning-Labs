@@ -38,6 +38,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [15 - ELF Module Basics](labs/15-elf-module-basics/notes.md) | ELF-aware detection | `import "elf"`, ELF type, architecture, entry point, and structure-aware conditions |
 | [16 - External Variables, Tags and Rule Organization](labs/16-external-variables-tags-and-organization/notes.md) | Rule-set organization | External variables, tags, scan configuration, and reproducible workflows |
 | [17 - Include Files, Modular Rule Sets and Dependencies](labs/17-includes-modular-rules-and-dependencies/notes.md) | Multi-file rule organization | `include`, shared helpers, dependencies, runbooks, and packaging |
+| [18 - Rule Quality, False Positives and Performance](labs/18-rule-quality-performance-and-test-corpus/notes.md) | Detection quality | False positives/negatives, selectivity, thresholds, benign corpora, regression tests, and local timing |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -62,7 +63,8 @@ YARA-Learning-Labs/
 │   ├── 14-rule-references-and-private-helpers/
 │   ├── 15-elf-module-basics/
 │   ├── 16-external-variables-tags-and-organization/
-│   └── 17-includes-modular-rules-and-dependencies/
+│   ├── 17-includes-modular-rules-and-dependencies/
+│   └── 18-rule-quality-performance-and-test-corpus/
 ├── resources.md
 └── LICENSE
 ```
@@ -114,6 +116,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [15 - ELF Module Temelleri](labs/15-elf-module-basics/notes.md) | ELF-aware detection | `import "elf"`, ELF type, architecture, entry point ve structure-aware condition'lar |
 | [16 - External Variable, Tag ve Rule Organizasyonu](labs/16-external-variables-tags-and-organization/notes.md) | Rule-set organizasyonu | External variable, tag, scan configuration ve reproducible workflow |
 | [17 - Include Dosyaları ve Modüler Rule Setleri](labs/17-includes-modular-rules-and-dependencies/notes.md) | Multi-file rule organizasyonu | `include`, shared helper, dependency, runbook ve packaging |
+| [18 - Rule Kalitesi, False Positive ve Performance](labs/18-rule-quality-performance-and-test-corpus/notes.md) | Detection quality | False positive/negative, selectivity, threshold, benign corpus, regression ve local timing |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
