@@ -31,7 +31,8 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [07 - File Size and Header Checks](labs/07-file-size-and-headers/notes.md) | Structural conditions | `filesize`, `uint16(0)`, offsets, and simple header checks |
 | [08 - PE Module Basics](labs/08-pe-module-basics/notes.md) | PE-aware conditions | `import "pe"`, section count, architecture, and combining parsed PE data with raw header checks |
 | [09 - PE Imports and Sections](labs/09-pe-imports-and-sections/notes.md) | PE structure inspection | `pe.imports()`, section metadata, and structure-aware filtering |
-| [10 - PE Entry Point and Section Flags](labs/10-pe-entry-point-and-section-flags/notes.md) | Entry point and permissions | `pe.entry_point`, `pe.section_index()`, and `SECTION_MEM_EXECUTE` |\n| [11 - Rule Testing Workflow](labs/11-rule-testing-workflow/notes.md) | Testing and validation | Positive/negative samples, recursive scans, and inspecting matching strings |
+| [10 - PE Entry Point and Section Flags](labs/10-pe-entry-point-and-section-flags/notes.md) | Entry point and permissions | `pe.entry_point`, `pe.section_index()`, and `SECTION_MEM_EXECUTE` |
+| [11 - Rule Testing Workflow](labs/11-rule-testing-workflow/notes.md) | Testing and validation | Positive/negative samples, recursive scans, and inspecting matching strings |
 | [12 - Match Counts and Offsets](labs/12-match-counts-and-offsets/notes.md) | Match position and frequency | `#identifier`, `@identifier[n]`, and positional conditions |
 | [13 - String Sets and Threshold Conditions](labs/13-string-sets-and-thresholds/notes.md) | Grouping indicators | Prefix groups, `n of (...)`, and threshold-based conditions |
 | [14 - Rule References and Private Helper Rules](labs/14-rule-references-and-private-helpers/notes.md) | Modular rule logic | Rule references, `private rule`, and reusable helper conditions |
@@ -39,6 +40,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [16 - External Variables, Tags and Rule Organization](labs/16-external-variables-tags-and-organization/notes.md) | Rule-set organization | External variables, tags, scan configuration, and reproducible workflows |
 | [17 - Include Files, Modular Rule Sets and Dependencies](labs/17-includes-modular-rules-and-dependencies/notes.md) | Multi-file rule organization | `include`, shared helpers, dependencies, runbooks, and packaging |
 | [18 - Rule Quality, False Positives and Performance](labs/18-rule-quality-performance-and-test-corpus/notes.md) | Detection quality | False positives/negatives, selectivity, thresholds, benign corpora, regression tests, and local timing |
+| [19 - Math Module: Entropy, Byte Windows and Detection Confidence](labs/19-math-entropy-and-windowed-analysis/notes.md) | Byte statistics and rule testing | `math.entropy`, bounded windows, synthetic samples, FP/FN analysis |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -57,14 +59,16 @@ YARA-Learning-Labs/
 │   ├── 07-file-size-and-headers/
 │   ├── 08-pe-module-basics/
 │   ├── 09-pe-imports-and-sections/
-│   ├── 10-pe-entry-point-and-section-flags/\n│   ├── 11-rule-testing-workflow/
+│   ├── 10-pe-entry-point-and-section-flags/
+│   ├── 11-rule-testing-workflow/
 │   ├── 12-match-counts-and-offsets/
 │   ├── 13-string-sets-and-thresholds/
 │   ├── 14-rule-references-and-private-helpers/
 │   ├── 15-elf-module-basics/
 │   ├── 16-external-variables-tags-and-organization/
 │   ├── 17-includes-modular-rules-and-dependencies/
-│   └── 18-rule-quality-performance-and-test-corpus/
+│   ├── 18-rule-quality-performance-and-test-corpus/
+│   └── 19-math-entropy-and-windowed-analysis/
 ├── resources.md
 └── LICENSE
 ```
@@ -109,7 +113,8 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [07 - Dosya Boyutu ve Header Kontrolleri](labs/07-file-size-and-headers/notes.md) | Yapısal koşullar | `filesize`, `uint16(0)`, offset ve basit header kontrolleri |
 | [08 - PE Module Temelleri](labs/08-pe-module-basics/notes.md) | PE-aware koşullar | `import "pe"`, section sayısı, mimari ve parse edilmiş PE verisini ham header kontrolleriyle birleştirmek |
 | [09 - PE Import'ları ve Section'lar](labs/09-pe-imports-and-sections/notes.md) | PE yapısını incelemek | `pe.imports()`, section metadata'sı ve structure-aware filtreleme |
-| [10 - PE Entry Point ve Section Bayrakları](labs/10-pe-entry-point-and-section-flags/notes.md) | Entry point ve izinler | `pe.entry_point`, `pe.section_index()` ve `SECTION_MEM_EXECUTE` |\n| [11 - Rule Test İş Akışı](labs/11-rule-testing-workflow/notes.md) | Test ve doğrulama | Pozitif/negatif örnekler, recursive tarama ve eşleşen stringleri inceleme |
+| [10 - PE Entry Point ve Section Bayrakları](labs/10-pe-entry-point-and-section-flags/notes.md) | Entry point ve izinler | `pe.entry_point`, `pe.section_index()` ve `SECTION_MEM_EXECUTE` |
+| [11 - Rule Test İş Akışı](labs/11-rule-testing-workflow/notes.md) | Test ve doğrulama | Pozitif/negatif örnekler, recursive tarama ve eşleşen stringleri inceleme |
 | [12 - Eşleşme Sayıları ve Offsetler](labs/12-match-counts-and-offsets/notes.md) | Eşleşme konumu ve sıklığı | `#identifier`, `@identifier[n]` ve positional condition'lar |
 | [13 - String Grupları ve Threshold Koşulları](labs/13-string-sets-and-thresholds/notes.md) | Indicator gruplama | Prefix grupları, `n of (...)` ve threshold tabanlı condition'lar |
 | [14 - Rule Referansları ve Private Helper Rule'lar](labs/14-rule-references-and-private-helpers/notes.md) | Modüler rule mantığı | Rule reference, `private rule` ve reusable helper condition'lar |
@@ -117,6 +122,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [16 - External Variable, Tag ve Rule Organizasyonu](labs/16-external-variables-tags-and-organization/notes.md) | Rule-set organizasyonu | External variable, tag, scan configuration ve reproducible workflow |
 | [17 - Include Dosyaları ve Modüler Rule Setleri](labs/17-includes-modular-rules-and-dependencies/notes.md) | Multi-file rule organizasyonu | `include`, shared helper, dependency, runbook ve packaging |
 | [18 - Rule Kalitesi, False Positive ve Performance](labs/18-rule-quality-performance-and-test-corpus/notes.md) | Detection quality | False positive/negative, selectivity, threshold, benign corpus, regression ve local timing |
+| [19 - Math Modülü: Entropy, Byte Window ve Tespit Güvenilirliği](labs/19-math-entropy-and-windowed-analysis/notes.tr.md) | Byte istatistiği ve rule testi | `math.entropy`, pencere ölçümü, sentetik test ve FP/FN yorumu |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -140,7 +146,11 @@ YARA-Learning-Labs/
 │   ├── 12-match-counts-and-offsets/
 │   ├── 13-string-sets-and-thresholds/
 │   ├── 14-rule-references-and-private-helpers/
-│   └── 15-elf-module-basics/
+│   ├── 15-elf-module-basics/
+│   ├── 16-external-variables-tags-and-organization/
+│   ├── 17-includes-modular-rules-and-dependencies/
+│   ├── 18-rule-quality-performance-and-test-corpus/
+│   └── 19-math-entropy-and-windowed-analysis/
 ├── resources.md
 └── LICENSE
 ```
