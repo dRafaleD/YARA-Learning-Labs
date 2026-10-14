@@ -41,6 +41,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [17 - Include Files, Modular Rule Sets and Dependencies](labs/17-includes-modular-rules-and-dependencies/notes.md) | Multi-file rule organization | `include`, shared helpers, dependencies, runbooks, and packaging |
 | [18 - Rule Quality, False Positives and Performance](labs/18-rule-quality-performance-and-test-corpus/notes.md) | Detection quality | False positives/negatives, selectivity, thresholds, benign corpora, regression tests, and local timing |
 | [19 - Math Module: Entropy, Byte Windows and Detection Confidence](labs/19-math-entropy-and-windowed-analysis/notes.md) | Byte statistics and rule testing | `math.entropy`, bounded windows, synthetic samples, FP/FN analysis |
+| [20 - Detection Metrics, Corpus Labels and Regression Testing](labs/20-detection-testing-metrics-and-regression/notes.md) | Testing and metrics | Confusion matrix, precision/recall, labeled corpus and automated YARA regression |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -68,7 +69,8 @@ YARA-Learning-Labs/
 │   ├── 16-external-variables-tags-and-organization/
 │   ├── 17-includes-modular-rules-and-dependencies/
 │   ├── 18-rule-quality-performance-and-test-corpus/
-│   └── 19-math-entropy-and-windowed-analysis/
+│   ├── 19-math-entropy-and-windowed-analysis/
+│   └── 20-detection-testing-metrics-and-regression/
 ├── resources.md
 └── LICENSE
 ```
@@ -123,6 +125,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [17 - Include Dosyaları ve Modüler Rule Setleri](labs/17-includes-modular-rules-and-dependencies/notes.md) | Multi-file rule organizasyonu | `include`, shared helper, dependency, runbook ve packaging |
 | [18 - Rule Kalitesi, False Positive ve Performance](labs/18-rule-quality-performance-and-test-corpus/notes.md) | Detection quality | False positive/negative, selectivity, threshold, benign corpus, regression ve local timing |
 | [19 - Math Modülü: Entropy, Byte Window ve Tespit Güvenilirliği](labs/19-math-entropy-and-windowed-analysis/notes.tr.md) | Byte istatistiği ve rule testi | `math.entropy`, pencere ölçümü, sentetik test ve FP/FN yorumu |
+| [20 - Tespit Metrikleri, Corpus Etiketleri ve Regression Test](labs/20-detection-testing-metrics-and-regression/notes.tr.md) | Test ve metrikler | Confusion matrix, precision/recall, etiketli corpus ve YARA regression otomasyonu |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -150,7 +153,8 @@ YARA-Learning-Labs/
 │   ├── 16-external-variables-tags-and-organization/
 │   ├── 17-includes-modular-rules-and-dependencies/
 │   ├── 18-rule-quality-performance-and-test-corpus/
-│   └── 19-math-entropy-and-windowed-analysis/
+│   ├── 19-math-entropy-and-windowed-analysis/
+│   └── 20-detection-testing-metrics-and-regression/
 ├── resources.md
 └── LICENSE
 ```
