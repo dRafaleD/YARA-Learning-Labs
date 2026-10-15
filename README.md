@@ -43,6 +43,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [19 - Math Module: Entropy, Byte Windows and Detection Confidence](labs/19-math-entropy-and-windowed-analysis/notes.md) | Byte statistics and rule testing | `math.entropy`, bounded windows, synthetic samples, FP/FN analysis |
 | [20 - Detection Metrics, Corpus Labels and Regression Testing](labs/20-detection-testing-metrics-and-regression/notes.md) | Testing and metrics | Confusion matrix, precision/recall, labeled corpus and automated YARA regression |
 | [21 - Byte Positions, File Structure and Boundary-Case Testing](labs/21-byte-positions-file-structure-and-boundary-tests/notes.md) | Positional rules | `at`, `in`, size gates, negative samples and regression |
+| [22 - PE/ELF Format Detection, Structural Indicators and Regression](labs/22-pe-elf-structure-and-regression/notes.md) | Multi-format training | PE/ELF parser modules, benign controls and regression |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -129,6 +130,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [19 - Math Modülü: Entropy, Byte Window ve Tespit Güvenilirliği](labs/19-math-entropy-and-windowed-analysis/notes.tr.md) | Byte istatistiği ve rule testi | `math.entropy`, pencere ölçümü, sentetik test ve FP/FN yorumu |
 | [20 - Tespit Metrikleri, Corpus Etiketleri ve Regression Test](labs/20-detection-testing-metrics-and-regression/notes.tr.md) | Test ve metrikler | Confusion matrix, precision/recall, etiketli corpus ve YARA regression otomasyonu |
 | [21 - Byte Konumları, Dosya Yapısı ve Sınır Değeri Testleri](labs/21-byte-positions-file-structure-and-boundary-tests/notes.tr.md) | Konum tabanlı tespit | `at`, `in`, sınır kontrolleri ve regression |
+| [22 - PE/ELF Yapısal Tespit ve Regression](labs/22-pe-elf-structure-and-regression/notes.tr.md) | Yapısal doğrulama | PE/ELF modülleri ve testler |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
