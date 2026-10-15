@@ -1,0 +1,2 @@
+LAB22_CONTROL
+Benign YARA training sample
