@@ -1,0 +1,2 @@
+MZ LAB22_PE_SAMPLE
+not an actual PE executable
