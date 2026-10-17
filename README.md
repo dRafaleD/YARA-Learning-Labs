@@ -45,6 +45,8 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [21 - Byte Positions, File Structure and Boundary-Case Testing](labs/21-byte-positions-file-structure-and-boundary-tests/notes.md) | Positional rules | `at`, `in`, size gates, negative samples and regression |
 | [22 - PE/ELF Format Detection, Structural Indicators and Regression](labs/22-pe-elf-structure-and-regression/notes.md) | Multi-format training | PE/ELF parser modules, benign controls and regression |
 
+| [23 - ASCII and Wide String Detection with Regression Fixtures](labs/23-23-ascii-wide-encoding-and-regression/notes.md) | Encoding and testing | ASCII, wide, corpus fixtures and negative testing |
+
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
 ## Repository structure
@@ -131,6 +133,8 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [20 - Tespit Metrikleri, Corpus Etiketleri ve Regression Test](labs/20-detection-testing-metrics-and-regression/notes.tr.md) | Test ve metrikler | Confusion matrix, precision/recall, etiketli corpus ve YARA regression otomasyonu |
 | [21 - Byte Konumları, Dosya Yapısı ve Sınır Değeri Testleri](labs/21-byte-positions-file-structure-and-boundary-tests/notes.tr.md) | Konum tabanlı tespit | `at`, `in`, sınır kontrolleri ve regression |
 | [22 - PE/ELF Yapısal Tespit ve Regression](labs/22-pe-elf-structure-and-regression/notes.tr.md) | Yapısal doğrulama | PE/ELF modülleri ve testler |
+
+| [23 - ASCII ve Wide String Tespiti ve Regresyon Örnekleri](labs/23-23-ascii-wide-encoding-and-regression/notes.tr.md) | Kodlama ve test | ASCII, wide, corpus ve negatif test |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
