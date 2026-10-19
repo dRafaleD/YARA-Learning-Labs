@@ -49,6 +49,8 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 
 | [24 - Rule Namespaces and Multi-Ruleset Regression Testing](labs/24-rule-namespaces-and-multi-ruleset-testing/notes.md) | Multi-rule testing | Rule organization and reproducible test fixtures |
 
+| [25 - Corpus Quality, Near-Miss Rules and Regression Gates](labs/25-corpus-quality-and-regression/notes.md) | Rule validation | Near misses, quality and corpus regression |
+
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
 ## Repository structure
@@ -139,6 +141,8 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [23 - ASCII ve Wide String Tespiti ve Regresyon Örnekleri](labs/23-23-ascii-wide-encoding-and-regression/notes.tr.md) | Kodlama ve test | ASCII, wide, corpus ve negatif test |
 
 | [24 - Kural İsim Alanları ve Çoklu Kural Kümesi Regresyon Testleri](labs/24-rule-namespaces-and-multi-ruleset-testing/notes.tr.md) | Çoklu kural testi | Kural düzeni ve tekrar üretilebilir test örnekleri |
+
+| [25 - Veri Kümesi Kalitesi, Yakın Eşleşmeler ve Regresyon Kontrolleri](labs/25-corpus-quality-and-regression/notes.tr.md) | Kural doğrulama | Yakın eşleşme, kalite ve regresyon |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
