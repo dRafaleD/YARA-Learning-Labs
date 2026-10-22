@@ -55,6 +55,8 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 
 | [27 - Hex Patterns, Bounded Jumps and Negative Testing](labs/27-hex-jumps-and-bounded-patterns/notes.md) | Hex patterns | Bounded jumps and negative tests |
 
+| [28 - File Signatures, Offset Constraints and False Positive Control](labs/28-file-signatures-offsets-and-false-positives/notes.md) | File signature checks | Offsets and contextual indicators |
+
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
 ## Repository structure
@@ -151,6 +153,8 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [26 - YARA Eşleşme Açıklamaları, Metadata ve Doğrulama](labs/26-yara-metadata-and-explainable-matches/notes.tr.md) | Kural doğrulama | Metadata ve eşleşme kanıtları |
 
 | [27 - Hex Patternleri, Sınırlı Atlama ve Negatif Test](labs/27-hex-jumps-and-bounded-patterns/notes.tr.md) | Hex örüntüler | Sınırlı atlama ve negatif test |
+
+| [28 - Dosya İmzaları, Offset Sınırları ve Yanlış Pozitif Kontrolü](labs/28-file-signatures-offsets-and-false-positives/notes.tr.md) | Dosya imzaları | Offset ve bağlamsal göstergeler |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
