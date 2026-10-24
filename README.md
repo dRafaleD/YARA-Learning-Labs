@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 29 — String Counts and Offset Correlation**
-- [English notes](labs/29-string-count-and-offset-correlation/notes.md) · [Türkçe notlar](labs/29-string-count-and-offset-correlation/notes.tr.md) · [Practical exercise](labs/29-string-count-and-offset-correlation/rules.yar)
+- **Lab 30 — nocase, wide and Encoding Variants in YARA**
+- [English notes](labs/30-nocase-wide-and-encoding-variants/notes.md) · [Türkçe notlar](labs/30-nocase-wide-and-encoding-variants/notes.tr.md) · [Practical exercise](labs/30-nocase-wide-and-encoding-variants/rules.yar)
