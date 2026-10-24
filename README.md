@@ -201,3 +201,9 @@ Mevcut lab'ler yalnızca zararsız alıştırma metinleri ve yerel olarak oluşt
 - YARA rule'larının analiz vakaları etrafında nasıl düzenlenebildiğini görmek için öğrenme kaynaklarından biri olarak [ZAYOTEM Malware Analysis Feed](https://github.com/ZAYOTEM/malware-analysis-feed) incelenmiştir. Bu proje MIT lisanslıdır: Copyright (c) 2022 ZAYOTEM.
 
 Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosyalar YARA-Learning-Labs için özel olarak yazılmıştır. ZAYOTEM'e ait malware örnekleri, script'ler veya rule'lar burada yeniden dağıtılmamaktadır. Ayrıntılar için [resources.md](resources.md) dosyasına bakın.
+
+
+## Latest lab
+
+- **Lab 29 — String Counts and Offset Correlation**
+- [English notes](labs/29-string-count-and-offset-correlation/notes.md) · [Türkçe notlar](labs/29-string-count-and-offset-correlation/notes.tr.md) · [Practical exercise](labs/29-string-count-and-offset-correlation/rules.yar)
