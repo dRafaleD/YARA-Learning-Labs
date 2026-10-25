@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 30 — nocase, wide and Encoding Variants in YARA**
-- [English notes](labs/30-nocase-wide-and-encoding-variants/notes.md) · [Türkçe notlar](labs/30-nocase-wide-and-encoding-variants/notes.tr.md) · [Practical exercise](labs/30-nocase-wide-and-encoding-variants/rules.yar)
+- **Lab 31 — String Sets and N-of Conditions**
+- [English notes](labs/31-string-sets-and-n-of-conditions/notes.md) · [Türkçe notlar](labs/31-string-sets-and-n-of-conditions/notes.tr.md) · [Practical exercise](labs/31-string-sets-and-n-of-conditions/rules.yar)
