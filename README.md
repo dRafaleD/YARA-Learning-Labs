@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 31 — String Sets and N-of Conditions**
-- [English notes](labs/31-string-sets-and-n-of-conditions/notes.md) · [Türkçe notlar](labs/31-string-sets-and-n-of-conditions/notes.tr.md) · [Practical exercise](labs/31-string-sets-and-n-of-conditions/rules.yar)
+- **Lab 32 — not Conditions and Benign-Marker Exclusions**
+- [English notes](labs/32-not-conditions-and-benign-marker-exclusions/notes.md) · [Türkçe notlar](labs/32-not-conditions-and-benign-marker-exclusions/notes.tr.md) · [Practical exercise](labs/32-not-conditions-and-benign-marker-exclusions/rules.yar)
