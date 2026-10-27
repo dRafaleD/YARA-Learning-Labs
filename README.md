@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 32 — not Conditions and Benign-Marker Exclusions**
-- [English notes](labs/32-not-conditions-and-benign-marker-exclusions/notes.md) · [Türkçe notlar](labs/32-not-conditions-and-benign-marker-exclusions/notes.tr.md) · [Practical exercise](labs/32-not-conditions-and-benign-marker-exclusions/rules.yar)
+- **Lab 33 — Private Rules and Rule Composition**
+- [English notes](labs/33-private-rules-and-composition/notes.md) · [Türkçe notlar](labs/33-private-rules-and-composition/notes.tr.md) · [Practical exercise](labs/33-private-rules-and-composition/rules.yar)
