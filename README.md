@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 33 — Private Rules and Rule Composition**
-- [English notes](labs/33-private-rules-and-composition/notes.md) · [Türkçe notlar](labs/33-private-rules-and-composition/notes.tr.md) · [Practical exercise](labs/33-private-rules-and-composition/rules.yar)
+- **Lab 34 — Bounded Regular Expressions in YARA**
+- [English notes](labs/34-bounded-regular-expressions/notes.md) · [Türkçe notlar](labs/34-bounded-regular-expressions/notes.tr.md) · [Practical exercise](labs/34-bounded-regular-expressions/rules.yar)
