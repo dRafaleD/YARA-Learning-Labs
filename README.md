@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 34 — Bounded Regular Expressions in YARA**
-- [English notes](labs/34-bounded-regular-expressions/notes.md) · [Türkçe notlar](labs/34-bounded-regular-expressions/notes.tr.md) · [Practical exercise](labs/34-bounded-regular-expressions/rules.yar)
+- **Lab 35 — The xor Modifier and Single-Byte Encoded Strings**
+- [English notes](labs/35-xor-modifier-and-single-byte-encoded-strings/notes.md) · [Türkçe notlar](labs/35-xor-modifier-and-single-byte-encoded-strings/notes.tr.md) · [Practical exercise](labs/35-xor-modifier-and-single-byte-encoded-strings/rules.yar)
