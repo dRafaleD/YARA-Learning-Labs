@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 36 — Cheap Conditions First: filesize and Header Gates**
-- [English notes](labs/36-cheap-conditions-first-filesize-and-header-gates/notes.md) · [Türkçe notlar](labs/36-cheap-conditions-first-filesize-and-header-gates/notes.tr.md) · [Practical exercise](labs/36-cheap-conditions-first-filesize-and-header-gates/rules.yar)
+- **Lab 37 — Hex Alternatives and Wildcards**
+- [English notes](labs/37-hex-alternatives-and-wildcards/notes.md) · [Türkçe notlar](labs/37-hex-alternatives-and-wildcards/notes.tr.md) · [Practical exercise](labs/37-hex-alternatives-and-wildcards/rules.yar)
