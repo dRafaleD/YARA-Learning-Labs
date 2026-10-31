@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 37 — Hex Alternatives and Wildcards**
-- [English notes](labs/37-hex-alternatives-and-wildcards/notes.md) · [Türkçe notlar](labs/37-hex-alternatives-and-wildcards/notes.tr.md) · [Practical exercise](labs/37-hex-alternatives-and-wildcards/rules.yar)
+- **Lab 38 — for Loops over String Occurrences**
+- [English notes](labs/38-for-loops-over-string-occurrences/notes.md) · [Türkçe notlar](labs/38-for-loops-over-string-occurrences/notes.tr.md) · [Practical exercise](labs/38-for-loops-over-string-occurrences/rules.yar)
