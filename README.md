@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 40 — Global Rules for Scoped Scanning**
-- [English notes](labs/40-global-rules-for-scoped-scanning/notes.md) · [Türkçe notlar](labs/40-global-rules-for-scoped-scanning/notes.tr.md) · [Practical exercise](labs/40-global-rules-for-scoped-scanning/rules.yar)
+- **Lab 41 — Integer Reads and Endianness**
+- [English notes](labs/41-integer-reads-and-endianness/notes.md) · [Türkçe notlar](labs/41-integer-reads-and-endianness/notes.tr.md) · [Practical exercise](labs/41-integer-reads-and-endianness/rules.yar)
