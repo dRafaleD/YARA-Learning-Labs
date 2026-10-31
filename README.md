@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 38 — for Loops over String Occurrences**
-- [English notes](labs/38-for-loops-over-string-occurrences/notes.md) · [Türkçe notlar](labs/38-for-loops-over-string-occurrences/notes.tr.md) · [Practical exercise](labs/38-for-loops-over-string-occurrences/rules.yar)
+- **Lab 39 — The base64 Modifier for Encoded Strings**
+- [English notes](labs/39-base64-modifier-for-encoded-strings/notes.md) · [Türkçe notlar](labs/39-base64-modifier-for-encoded-strings/notes.tr.md) · [Practical exercise](labs/39-base64-modifier-for-encoded-strings/rules.yar)
