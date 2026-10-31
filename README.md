@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 35 — The xor Modifier and Single-Byte Encoded Strings**
-- [English notes](labs/35-xor-modifier-and-single-byte-encoded-strings/notes.md) · [Türkçe notlar](labs/35-xor-modifier-and-single-byte-encoded-strings/notes.tr.md) · [Practical exercise](labs/35-xor-modifier-and-single-byte-encoded-strings/rules.yar)
+- **Lab 36 — Cheap Conditions First: filesize and Header Gates**
+- [English notes](labs/36-cheap-conditions-first-filesize-and-header-gates/notes.md) · [Türkçe notlar](labs/36-cheap-conditions-first-filesize-and-header-gates/notes.tr.md) · [Practical exercise](labs/36-cheap-conditions-first-filesize-and-header-gates/rules.yar)
