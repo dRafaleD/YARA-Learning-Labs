@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 39 — The base64 Modifier for Encoded Strings**
-- [English notes](labs/39-base64-modifier-for-encoded-strings/notes.md) · [Türkçe notlar](labs/39-base64-modifier-for-encoded-strings/notes.tr.md) · [Practical exercise](labs/39-base64-modifier-for-encoded-strings/rules.yar)
+- **Lab 40 — Global Rules for Scoped Scanning**
+- [English notes](labs/40-global-rules-for-scoped-scanning/notes.md) · [Türkçe notlar](labs/40-global-rules-for-scoped-scanning/notes.tr.md) · [Practical exercise](labs/40-global-rules-for-scoped-scanning/rules.yar)
