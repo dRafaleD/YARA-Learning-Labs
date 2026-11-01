@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 41 — Integer Reads and Endianness**
-- [English notes](labs/41-integer-reads-and-endianness/notes.md) · [Türkçe notlar](labs/41-integer-reads-and-endianness/notes.tr.md) · [Practical exercise](labs/41-integer-reads-and-endianness/rules.yar)
+- **Lab 42 — filesize Units and Size Boundaries**
+- [English notes](labs/42-filesize-units-and-size-boundaries/notes.md) · [Türkçe notlar](labs/42-filesize-units-and-size-boundaries/notes.tr.md) · [Practical exercise](labs/42-filesize-units-and-size-boundaries/rules.yar)
