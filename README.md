@@ -205,5 +205,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 42 — filesize Units and Size Boundaries**
-- [English notes](labs/42-filesize-units-and-size-boundaries/notes.md) · [Türkçe notlar](labs/42-filesize-units-and-size-boundaries/notes.tr.md) · [Practical exercise](labs/42-filesize-units-and-size-boundaries/rules.yar)
+- **Lab 43 — The fullword Modifier and Word Boundaries**
+- [English notes](labs/43-fullword-modifier-and-word-boundaries/notes.md) · [Türkçe notlar](labs/43-fullword-modifier-and-word-boundaries/notes.tr.md) · [Practical exercise](labs/43-fullword-modifier-and-word-boundaries/rules.yar)
