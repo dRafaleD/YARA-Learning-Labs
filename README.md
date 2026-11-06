@@ -44,18 +44,28 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [20 - Detection Metrics, Corpus Labels and Regression Testing](labs/20-detection-testing-metrics-and-regression/notes.md) | Testing and metrics | Confusion matrix, precision/recall, labeled corpus and automated YARA regression |
 | [21 - Byte Positions, File Structure and Boundary-Case Testing](labs/21-byte-positions-file-structure-and-boundary-tests/notes.md) | Positional rules | `at`, `in`, size gates, negative samples and regression |
 | [22 - PE/ELF Format Detection, Structural Indicators and Regression](labs/22-pe-elf-structure-and-regression/notes.md) | Multi-format training | PE/ELF parser modules, benign controls and regression |
-
 | [23 - ASCII and Wide String Detection with Regression Fixtures](labs/23-23-ascii-wide-encoding-and-regression/notes.md) | Encoding and testing | ASCII, wide, corpus fixtures and negative testing |
-
 | [24 - Rule Namespaces and Multi-Ruleset Regression Testing](labs/24-rule-namespaces-and-multi-ruleset-testing/notes.md) | Multi-rule testing | Rule organization and reproducible test fixtures |
-
 | [25 - Corpus Quality, Near-Miss Rules and Regression Gates](labs/25-corpus-quality-and-regression/notes.md) | Rule validation | Near misses, quality and corpus regression |
-
 | [26 - YARA Match Explanation, Metadata and Validation](labs/26-yara-metadata-and-explainable-matches/notes.md) | Rule validation | Metadata and matching evidence |
-
 | [27 - Hex Patterns, Bounded Jumps and Negative Testing](labs/27-hex-jumps-and-bounded-patterns/notes.md) | Hex patterns | Bounded jumps and negative tests |
-
 | [28 - File Signatures, Offset Constraints and False Positive Control](labs/28-file-signatures-offsets-and-false-positives/notes.md) | File signature checks | Offsets and contextual indicators |
+| [29 - String Count And Offset Correlation](labs/29-string-count-and-offset-correlation/notes.md) | String Count And Offset Correlation | Safe examples and hands-on practice |
+| [30 - Nocase Wide And Encoding Variants](labs/30-nocase-wide-and-encoding-variants/notes.md) | Nocase Wide And Encoding Variants | Safe examples and hands-on practice |
+| [Bonus 30 - Rule Quality And False Positive Testing](labs/30-rule-quality-and-false-positive-testing/notes.md) | Rule Quality And False Positive Testing | Safe examples and hands-on practice |
+| [31 - String Sets And N Of Conditions](labs/31-string-sets-and-n-of-conditions/notes.md) | String Sets And N Of Conditions | Safe examples and hands-on practice |
+| [32 - Not Conditions And Benign Marker Exclusions](labs/32-not-conditions-and-benign-marker-exclusions/notes.md) | Not Conditions And Benign Marker Exclusions | Safe examples and hands-on practice |
+| [33 - Private Rules And Composition](labs/33-private-rules-and-composition/notes.md) | Private Rules And Composition | Safe examples and hands-on practice |
+| [34 - Bounded Regular Expressions](labs/34-bounded-regular-expressions/notes.md) | Bounded Regular Expressions | Safe examples and hands-on practice |
+| [35 - XOR Modifier And Single Byte Encoded Strings](labs/35-xor-modifier-and-single-byte-encoded-strings/notes.md) | XOR Modifier And Single Byte Encoded Strings | Safe examples and hands-on practice |
+| [36 - Cheap Conditions First Filesize And Header Gates](labs/36-cheap-conditions-first-filesize-and-header-gates/notes.md) | Cheap Conditions First Filesize And Header Gates | Safe examples and hands-on practice |
+| [37 - Hex Alternatives And Wildcards](labs/37-hex-alternatives-and-wildcards/notes.md) | Hex Alternatives And Wildcards | Safe examples and hands-on practice |
+| [38 - For Loops Over String Occurrences](labs/38-for-loops-over-string-occurrences/notes.md) | For Loops Over String Occurrences | Safe examples and hands-on practice |
+| [39 - Base64 Modifier For Encoded Strings](labs/39-base64-modifier-for-encoded-strings/notes.md) | Base64 Modifier For Encoded Strings | Safe examples and hands-on practice |
+| [40 - Global Rules For Scoped Scanning](labs/40-global-rules-for-scoped-scanning/notes.md) | Global Rules For Scoped Scanning | Safe examples and hands-on practice |
+| [41 - Integer Reads And Endianness](labs/41-integer-reads-and-endianness/notes.md) | Integer Reads And Endianness | Safe examples and hands-on practice |
+| [42 - Filesize Units And Size Boundaries](labs/42-filesize-units-and-size-boundaries/notes.md) | Filesize Units And Size Boundaries | Safe examples and hands-on practice |
+| [43 - Fullword Modifier And Word Boundaries](labs/43-fullword-modifier-and-word-boundaries/notes.md) | Fullword Modifier And Word Boundaries | Safe examples and hands-on practice |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -143,18 +153,28 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [20 - Tespit Metrikleri, Corpus Etiketleri ve Regression Test](labs/20-detection-testing-metrics-and-regression/notes.tr.md) | Test ve metrikler | Confusion matrix, precision/recall, etiketli corpus ve YARA regression otomasyonu |
 | [21 - Byte Konumları, Dosya Yapısı ve Sınır Değeri Testleri](labs/21-byte-positions-file-structure-and-boundary-tests/notes.tr.md) | Konum tabanlı tespit | `at`, `in`, sınır kontrolleri ve regression |
 | [22 - PE/ELF Yapısal Tespit ve Regression](labs/22-pe-elf-structure-and-regression/notes.tr.md) | Yapısal doğrulama | PE/ELF modülleri ve testler |
-
 | [23 - ASCII ve Wide String Tespiti ve Regresyon Örnekleri](labs/23-23-ascii-wide-encoding-and-regression/notes.tr.md) | Kodlama ve test | ASCII, wide, corpus ve negatif test |
-
 | [24 - Kural İsim Alanları ve Çoklu Kural Kümesi Regresyon Testleri](labs/24-rule-namespaces-and-multi-ruleset-testing/notes.tr.md) | Çoklu kural testi | Kural düzeni ve tekrar üretilebilir test örnekleri |
-
 | [25 - Veri Kümesi Kalitesi, Yakın Eşleşmeler ve Regresyon Kontrolleri](labs/25-corpus-quality-and-regression/notes.tr.md) | Kural doğrulama | Yakın eşleşme, kalite ve regresyon |
-
 | [26 - YARA Eşleşme Açıklamaları, Metadata ve Doğrulama](labs/26-yara-metadata-and-explainable-matches/notes.tr.md) | Kural doğrulama | Metadata ve eşleşme kanıtları |
-
 | [27 - Hex Patternleri, Sınırlı Atlama ve Negatif Test](labs/27-hex-jumps-and-bounded-patterns/notes.tr.md) | Hex örüntüler | Sınırlı atlama ve negatif test |
-
 | [28 - Dosya İmzaları, Offset Sınırları ve Yanlış Pozitif Kontrolü](labs/28-file-signatures-offsets-and-false-positives/notes.tr.md) | Dosya imzaları | Offset ve bağlamsal göstergeler |
+| [29 - String Count And Offset Correlation](labs/29-string-count-and-offset-correlation/notes.tr.md) | String Count And Offset Correlation | Zararsız örnekler ve pratik |
+| [30 - Nocase Wide And Encoding Variants](labs/30-nocase-wide-and-encoding-variants/notes.tr.md) | Nocase Wide And Encoding Variants | Zararsız örnekler ve pratik |
+| [Ek 30 - Rule Quality And False Positive Testing](labs/30-rule-quality-and-false-positive-testing/notes.tr.md) | Rule Quality And False Positive Testing | Zararsız örnekler ve pratik |
+| [31 - String Sets And N Of Conditions](labs/31-string-sets-and-n-of-conditions/notes.tr.md) | String Sets And N Of Conditions | Zararsız örnekler ve pratik |
+| [32 - Not Conditions And Benign Marker Exclusions](labs/32-not-conditions-and-benign-marker-exclusions/notes.tr.md) | Not Conditions And Benign Marker Exclusions | Zararsız örnekler ve pratik |
+| [33 - Private Rules And Composition](labs/33-private-rules-and-composition/notes.tr.md) | Private Rules And Composition | Zararsız örnekler ve pratik |
+| [34 - Bounded Regular Expressions](labs/34-bounded-regular-expressions/notes.tr.md) | Bounded Regular Expressions | Zararsız örnekler ve pratik |
+| [35 - XOR Modifier And Single Byte Encoded Strings](labs/35-xor-modifier-and-single-byte-encoded-strings/notes.tr.md) | XOR Modifier And Single Byte Encoded Strings | Zararsız örnekler ve pratik |
+| [36 - Cheap Conditions First Filesize And Header Gates](labs/36-cheap-conditions-first-filesize-and-header-gates/notes.tr.md) | Cheap Conditions First Filesize And Header Gates | Zararsız örnekler ve pratik |
+| [37 - Hex Alternatives And Wildcards](labs/37-hex-alternatives-and-wildcards/notes.tr.md) | Hex Alternatives And Wildcards | Zararsız örnekler ve pratik |
+| [38 - For Loops Over String Occurrences](labs/38-for-loops-over-string-occurrences/notes.tr.md) | For Loops Over String Occurrences | Zararsız örnekler ve pratik |
+| [39 - Base64 Modifier For Encoded Strings](labs/39-base64-modifier-for-encoded-strings/notes.tr.md) | Base64 Modifier For Encoded Strings | Zararsız örnekler ve pratik |
+| [40 - Global Rules For Scoped Scanning](labs/40-global-rules-for-scoped-scanning/notes.tr.md) | Global Rules For Scoped Scanning | Zararsız örnekler ve pratik |
+| [41 - Integer Reads And Endianness](labs/41-integer-reads-and-endianness/notes.tr.md) | Integer Reads And Endianness | Zararsız örnekler ve pratik |
+| [42 - Filesize Units And Size Boundaries](labs/42-filesize-units-and-size-boundaries/notes.tr.md) | Filesize Units And Size Boundaries | Zararsız örnekler ve pratik |
+| [43 - Fullword Modifier And Word Boundaries](labs/43-fullword-modifier-and-word-boundaries/notes.tr.md) | Fullword Modifier And Word Boundaries | Zararsız örnekler ve pratik |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -208,6 +228,3 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 - **Lab 43 — The fullword Modifier and Word Boundaries**
 - [English notes](labs/43-fullword-modifier-and-word-boundaries/notes.md) · [Türkçe notlar](labs/43-fullword-modifier-and-word-boundaries/notes.tr.md) · [Practical exercise](labs/43-fullword-modifier-and-word-boundaries/rules.yar)
 
-### Lab 30 — YARA Rule Quality and False Positives
-
-[English notes](labs/30-rule-quality-and-false-positive-testing/notes.md) · [Türkçe notlar](labs/30-rule-quality-and-false-positive-testing/notes.tr.md) · [Rule](labs/30-rule-quality-and-false-positive-testing/rules.yar) · [Evaluation](labs/30-rule-quality-and-false-positive-testing/evaluate.py)
