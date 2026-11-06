@@ -207,3 +207,7 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 - **Lab 43 — The fullword Modifier and Word Boundaries**
 - [English notes](labs/43-fullword-modifier-and-word-boundaries/notes.md) · [Türkçe notlar](labs/43-fullword-modifier-and-word-boundaries/notes.tr.md) · [Practical exercise](labs/43-fullword-modifier-and-word-boundaries/rules.yar)
+
+### Lab 30 — YARA Rule Quality and False Positives
+
+[English notes](labs/30-rule-quality-and-false-positive-testing/notes.md) · [Türkçe notlar](labs/30-rule-quality-and-false-positive-testing/notes.tr.md) · [Rule](labs/30-rule-quality-and-false-positive-testing/rules.yar) · [Evaluation](labs/30-rule-quality-and-false-positive-testing/evaluate.py)
