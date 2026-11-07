@@ -176,7 +176,6 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [41 - Integer Reads And Endianness](labs/41-integer-reads-and-endianness/notes.tr.md) | Integer Reads And Endianness | Zararsız örnekler ve pratik |
 | [42 - Filesize Units And Size Boundaries](labs/42-filesize-units-and-size-boundaries/notes.tr.md) | Filesize Units And Size Boundaries | Zararsız örnekler ve pratik |
 | [43 - Fullword Modifier And Word Boundaries](labs/43-fullword-modifier-and-word-boundaries/notes.tr.md) | Fullword Modifier And Word Boundaries | Zararsız örnekler ve pratik |
-
 | [44 - Negatif Veri Kümesi ve Yakın Eşleşmelerle YARA Regresyonu](labs/44-rule-regression-negative-corpus/notes.tr.md) | Regresyon | Pozitif/negatif sentetik test kümesi |\n\nİlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
 ## Repo yapısı
