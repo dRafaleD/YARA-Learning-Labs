@@ -66,6 +66,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [41 - Integer Reads And Endianness](labs/41-integer-reads-and-endianness/notes.md) | Integer Reads And Endianness | Safe examples and hands-on practice |
 | [42 - Filesize Units And Size Boundaries](labs/42-filesize-units-and-size-boundaries/notes.md) | Filesize Units And Size Boundaries | Safe examples and hands-on practice |
 | [43 - Fullword Modifier And Word Boundaries](labs/43-fullword-modifier-and-word-boundaries/notes.md) | Fullword Modifier And Word Boundaries | Safe examples and hands-on practice |
+| [44 - YARA Regression with Negative Corpus and Near Misses](labs/44-rule-regression-negative-corpus/notes.md) | Regression | Synthetic positive/negative corpus and near-miss controls |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -176,7 +177,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [42 - Filesize Units And Size Boundaries](labs/42-filesize-units-and-size-boundaries/notes.tr.md) | Filesize Units And Size Boundaries | Zararsız örnekler ve pratik |
 | [43 - Fullword Modifier And Word Boundaries](labs/43-fullword-modifier-and-word-boundaries/notes.tr.md) | Fullword Modifier And Word Boundaries | Zararsız örnekler ve pratik |
 
-İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
+| [44 - Negatif Veri Kümesi ve Yakın Eşleşmelerle YARA Regresyonu](labs/44-rule-regression-negative-corpus/notes.tr.md) | Regresyon | Pozitif/negatif sentetik test kümesi |\n\nİlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
 ## Repo yapısı
 
@@ -225,6 +226,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 43 — The fullword Modifier and Word Boundaries**
-- [English notes](labs/43-fullword-modifier-and-word-boundaries/notes.md) · [Türkçe notlar](labs/43-fullword-modifier-and-word-boundaries/notes.tr.md) · [Practical exercise](labs/43-fullword-modifier-and-word-boundaries/rules.yar)
-
+- **Lab 44 — YARA Regression with Negative Corpus and Near Misses**
+- [English notes](labs/44-rule-regression-negative-corpus/notes.md) · [Türkçe notlar](labs/44-rule-regression-negative-corpus/notes.tr.md) · [Practical exercise](labs/44-rule-regression-negative-corpus/rules.yar)
