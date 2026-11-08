@@ -68,6 +68,8 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [43 - Fullword Modifier And Word Boundaries](labs/43-fullword-modifier-and-word-boundaries/notes.md) | Fullword Modifier And Word Boundaries | Safe examples and hands-on practice |
 | [44 - YARA Regression with Negative Corpus and Near Misses](labs/44-rule-regression-negative-corpus/notes.md) | Regression | Synthetic positive/negative corpus and near-miss controls |
 
+| [45 - Rule Revisions and Metric Regression](labs/45-rule-revisions-and-metric-regression/notes.md) | Rule quality | Same corpus, two rule versions, precision/recall |
+
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
 ## Repository structure
@@ -176,7 +178,9 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [41 - Integer Reads And Endianness](labs/41-integer-reads-and-endianness/notes.tr.md) | Integer Reads And Endianness | Zararsız örnekler ve pratik |
 | [42 - Filesize Units And Size Boundaries](labs/42-filesize-units-and-size-boundaries/notes.tr.md) | Filesize Units And Size Boundaries | Zararsız örnekler ve pratik |
 | [43 - Fullword Modifier And Word Boundaries](labs/43-fullword-modifier-and-word-boundaries/notes.tr.md) | Fullword Modifier And Word Boundaries | Zararsız örnekler ve pratik |
-| [44 - Negatif Veri Kümesi ve Yakın Eşleşmelerle YARA Regresyonu](labs/44-rule-regression-negative-corpus/notes.tr.md) | Regresyon | Pozitif/negatif sentetik test kümesi |\n\nİlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
+| [44 - Negatif Veri Kümesi ve Yakın Eşleşmelerle YARA Regresyonu](labs/44-rule-regression-negative-corpus/notes.tr.md) | Regresyon | Pozitif/negatif sentetik test kümesi |\n\n| [45 - Kural Sürümleri ve Metrik Regresyonu](labs/45-rule-revisions-and-metric-regression/notes.tr.md) | Kural kalitesi | Aynı örnekler, iki kural, kesinlik/duyarlılık |
+
+İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
 ## Repo yapısı
 
@@ -225,5 +229,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 44 — YARA Regression with Negative Corpus and Near Misses**
-- [English notes](labs/44-rule-regression-negative-corpus/notes.md) · [Türkçe notlar](labs/44-rule-regression-negative-corpus/notes.tr.md) · [Practical exercise](labs/44-rule-regression-negative-corpus/rules.yar)
+- **Lab 45 — Rule Revisions and Metric Regression**
+- [English notes](labs/45-rule-revisions-and-metric-regression/notes.md) · [Türkçe notlar](labs/45-rule-revisions-and-metric-regression/notes.tr.md) · [Rule revisions](labs/45-rule-revisions-and-metric-regression/rules_v2.yar) · [Evaluation](labs/45-rule-revisions-and-metric-regression/evaluate.py)
