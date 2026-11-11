@@ -71,6 +71,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [45 - Rule Revisions and Metric Regression](labs/45-rule-revisions-and-metric-regression/notes.md) | Rule quality | Same corpus, two rule versions, precision/recall |
 | [46 - Holdout Corpora and Rule Overfitting](labs/46-holdout-corpus-and-overfitting/notes.md) | Holdout evaluation | Synthetic train/test split and regression checks |
 | [47 - Near-Duplicate Leakage in YARA Evaluation](labs/47-near-duplicate-leakage-in-yara-evaluation/notes.md) | Evaluation integrity | Train/holdout overlap and deduplication |
+| [48 - YARA Thresholds, Recall and False Positives](labs/48-rule-threshold-tradeoffs-and-false-positives/notes.md) | Threshold design | Three string thresholds on one fixed synthetic corpus |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -183,6 +184,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [44 - Negatif Veri Kümesi ve Yakın Eşleşmelerle YARA Regresyonu](labs/44-rule-regression-negative-corpus/notes.tr.md) | Regresyon | Pozitif/negatif sentetik test kümesi |\n\n| [45 - Kural Sürümleri ve Metrik Regresyonu](labs/45-rule-revisions-and-metric-regression/notes.tr.md) | Kural kalitesi | Aynı örnekler, iki kural, kesinlik/duyarlılık |
 | [46 - Ayrı Test Kümesi ve Aşırı Uyum](labs/46-holdout-corpus-and-overfitting/notes.tr.md) | Holdout değerlendirme | Sentetik eğitim/test ayrımı |
 | [47 - YARA Değerlendirmesinde Benzer Örnek Sızıntısı](labs/47-near-duplicate-leakage-in-yara-evaluation/notes.tr.md) | Veri sızıntısı | Eğitim ve holdout benzer örnek kontrolü |
+| [48 - YARA Eşik Değerleri ve Yanlış Pozitifler](labs/48-rule-threshold-tradeoffs-and-false-positives/notes.tr.md) | Eşik tasarımı | Aynı sentetik kümede üç kuralın karşılaştırılması |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -233,5 +235,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 47 — Near-Duplicate Leakage in YARA Evaluation**
-- [English notes](labs/47-near-duplicate-leakage-in-yara-evaluation/notes.md) · [Türkçe notlar](labs/47-near-duplicate-leakage-in-yara-evaluation/notes.tr.md) · [YARA rules](labs/47-near-duplicate-leakage-in-yara-evaluation/rules.yar) · [Evaluator](labs/47-near-duplicate-leakage-in-yara-evaluation/evaluate.py)
+- **Lab 48 — YARA Thresholds, Recall and False Positives**
+- [English notes](labs/48-rule-threshold-tradeoffs-and-false-positives/notes.md) · [Türkçe notlar](labs/48-rule-threshold-tradeoffs-and-false-positives/notes.tr.md) · [YARA rules](labs/48-rule-threshold-tradeoffs-and-false-positives/rules.yar) · [Evaluator](labs/48-rule-threshold-tradeoffs-and-false-positives/evaluate.py)
