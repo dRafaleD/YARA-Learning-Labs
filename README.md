@@ -72,6 +72,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [46 - Holdout Corpora and Rule Overfitting](labs/46-holdout-corpus-and-overfitting/notes.md) | Holdout evaluation | Synthetic train/test split and regression checks |
 | [47 - Near-Duplicate Leakage in YARA Evaluation](labs/47-near-duplicate-leakage-in-yara-evaluation/notes.md) | Evaluation integrity | Train/holdout overlap and deduplication |
 | [48 - YARA Thresholds, Recall and False Positives](labs/48-rule-threshold-tradeoffs-and-false-positives/notes.md) | Threshold design | Three string thresholds on one fixed synthetic corpus |
+| [49 - Class Imbalance and Base Rates](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/notes.md) | Evaluation methodology | Synthetic balanced vs rare-positive confusion matrices |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -185,6 +186,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [46 - Ayrı Test Kümesi ve Aşırı Uyum](labs/46-holdout-corpus-and-overfitting/notes.tr.md) | Holdout değerlendirme | Sentetik eğitim/test ayrımı |
 | [47 - YARA Değerlendirmesinde Benzer Örnek Sızıntısı](labs/47-near-duplicate-leakage-in-yara-evaluation/notes.tr.md) | Veri sızıntısı | Eğitim ve holdout benzer örnek kontrolü |
 | [48 - YARA Eşik Değerleri ve Yanlış Pozitifler](labs/48-rule-threshold-tradeoffs-and-false-positives/notes.tr.md) | Eşik tasarımı | Aynı sentetik kümede üç kuralın karşılaştırılması |
+| [49 - YARA Temel Oran ve Sınıf Dengesizliği](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/notes.tr.md) | Ölçüm yöntemi | Dengeli ve nadir pozitif kümelerde TP/FP karşılaştırması |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -235,5 +237,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 48 — YARA Thresholds, Recall and False Positives**
-- [English notes](labs/48-rule-threshold-tradeoffs-and-false-positives/notes.md) · [Türkçe notlar](labs/48-rule-threshold-tradeoffs-and-false-positives/notes.tr.md) · [YARA rules](labs/48-rule-threshold-tradeoffs-and-false-positives/rules.yar) · [Evaluator](labs/48-rule-threshold-tradeoffs-and-false-positives/evaluate.py)
+- **Lab 49 — Class Imbalance and Base Rates in Rule Evaluation**
+- [English notes](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/notes.md) · [Türkçe notlar](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/notes.tr.md) · [YARA rules](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/rules.yar) · [Evaluator](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/evaluate.py)
