@@ -73,6 +73,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [47 - Near-Duplicate Leakage in YARA Evaluation](labs/47-near-duplicate-leakage-in-yara-evaluation/notes.md) | Evaluation integrity | Train/holdout overlap and deduplication |
 | [48 - YARA Thresholds, Recall and False Positives](labs/48-rule-threshold-tradeoffs-and-false-positives/notes.md) | Threshold design | Three string thresholds on one fixed synthetic corpus |
 | [49 - Class Imbalance and Base Rates](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/notes.md) | Evaluation methodology | Synthetic balanced vs rare-positive confusion matrices |
+| [50 - Stratified YARA Evaluation and Hidden False Positives](labs/50-stratified-rule-evaluation-and-hidden-false-positives/notes.md) | Evaluation methodology | Stratified harmless rule checks |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -187,6 +188,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [47 - YARA Değerlendirmesinde Benzer Örnek Sızıntısı](labs/47-near-duplicate-leakage-in-yara-evaluation/notes.tr.md) | Veri sızıntısı | Eğitim ve holdout benzer örnek kontrolü |
 | [48 - YARA Eşik Değerleri ve Yanlış Pozitifler](labs/48-rule-threshold-tradeoffs-and-false-positives/notes.tr.md) | Eşik tasarımı | Aynı sentetik kümede üç kuralın karşılaştırılması |
 | [49 - YARA Temel Oran ve Sınıf Dengesizliği](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/notes.tr.md) | Ölçüm yöntemi | Dengeli ve nadir pozitif kümelerde TP/FP karşılaştırması |
+| [50 - Gruplara Göre YARA Performansı](labs/50-stratified-rule-evaluation-and-hidden-false-positives/notes.tr.md) | Katmanlı değerlendirme | İki grupta FP farkı |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -237,5 +239,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 49 — Class Imbalance and Base Rates in Rule Evaluation**
-- [English notes](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/notes.md) · [Türkçe notlar](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/notes.tr.md) · [YARA rules](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/rules.yar) · [Evaluator](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/evaluate.py)
+- **Lab 50 — Stratified YARA Evaluation and Hidden False Positives**
+- [English notes](labs/50-stratified-rule-evaluation-and-hidden-false-positives/notes.md) · [Türkçe notlar](labs/50-stratified-rule-evaluation-and-hidden-false-positives/notes.tr.md) · [Practice](labs/50-stratified-rule-evaluation-and-hidden-false-positives/evaluate.py)
