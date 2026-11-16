@@ -75,6 +75,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [49 - Class Imbalance and Base Rates](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/notes.md) | Evaluation methodology | Synthetic balanced vs rare-positive confusion matrices |
 | [50 - Stratified YARA Evaluation and Hidden False Positives](labs/50-stratified-rule-evaluation-and-hidden-false-positives/notes.md) | Evaluation methodology | Stratified harmless rule checks |
 | [51 - Rule Overlap and Sample-Level Metrics](labs/51-rule-overlap-alert-deduplication-and-sample-metrics/notes.md) | Detection engineering | Eight rule alerts across four unique samples |
+| [52 - Content-Hash Deduplication and Alert Counts](labs/52-content-hash-deduplication-and-alert-counts/notes.md) | Detection engineering | Rule matches vs flagged files vs unique contents |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -191,6 +192,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [49 - YARA Temel Oran ve Sınıf Dengesizliği](labs/49-base-rate-and-class-imbalance-in-rule-evaluation/notes.tr.md) | Ölçüm yöntemi | Dengeli ve nadir pozitif kümelerde TP/FP karşılaştırması |
 | [50 - Gruplara Göre YARA Performansı](labs/50-stratified-rule-evaluation-and-hidden-false-positives/notes.tr.md) | Katmanlı değerlendirme | İki grupta FP farkı |
 | [51 - YARA Kural Çakışmaları ve Alarm Tekilleştirme](labs/51-rule-overlap-alert-deduplication-and-sample-metrics/notes.tr.md) | Alarm tekilleştirme | Kural eşleşmesi ve benzersiz dosya farkı |
+| [52 - İçerik Hash'i ile Alarm Tekilleştirme](labs/52-content-hash-deduplication-and-alert-counts/notes.tr.md) | Alarm metrikleri | Dosya, eşleşme ve benzersiz içerik |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -241,5 +243,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 51 — Rule Overlap, Alert Deduplication and Sample-Level Metrics**
-- [English notes](labs/51-rule-overlap-alert-deduplication-and-sample-metrics/notes.md) · [Türkçe notlar](labs/51-rule-overlap-alert-deduplication-and-sample-metrics/notes.tr.md) · [YARA rules](labs/51-rule-overlap-alert-deduplication-and-sample-metrics/rules.yar) · [Evaluator](labs/51-rule-overlap-alert-deduplication-and-sample-metrics/evaluate.py)
+- **Lab 52 — Content-Hash Deduplication and Alert Counts**
+- [English notes](labs/52-content-hash-deduplication-and-alert-counts/notes.md) · [Türkçe notlar](labs/52-content-hash-deduplication-and-alert-counts/notes.tr.md) · [YARA rules](labs/52-content-hash-deduplication-and-alert-counts/rules.yar) · [Evaluator](labs/52-content-hash-deduplication-and-alert-counts/evaluate.py)
