@@ -76,6 +76,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [50 - Stratified YARA Evaluation and Hidden False Positives](labs/50-stratified-rule-evaluation-and-hidden-false-positives/notes.md) | Evaluation methodology | Stratified harmless rule checks |
 | [51 - Rule Overlap and Sample-Level Metrics](labs/51-rule-overlap-alert-deduplication-and-sample-metrics/notes.md) | Detection engineering | Eight rule alerts across four unique samples |
 | [52 - Content-Hash Deduplication and Alert Counts](labs/52-content-hash-deduplication-and-alert-counts/notes.md) | Detection engineering | Rule matches vs flagged files vs unique contents |
+| [53 - Event Identity and Time-Window Deduplication](labs/53-event-identity-time-windows-and-alert-deduplication/notes.md) | Alert engineering | Compare raw, event, content and time-bucket counts |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -193,6 +194,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [50 - Gruplara Göre YARA Performansı](labs/50-stratified-rule-evaluation-and-hidden-false-positives/notes.tr.md) | Katmanlı değerlendirme | İki grupta FP farkı |
 | [51 - YARA Kural Çakışmaları ve Alarm Tekilleştirme](labs/51-rule-overlap-alert-deduplication-and-sample-metrics/notes.tr.md) | Alarm tekilleştirme | Kural eşleşmesi ve benzersiz dosya farkı |
 | [52 - İçerik Hash'i ile Alarm Tekilleştirme](labs/52-content-hash-deduplication-and-alert-counts/notes.tr.md) | Alarm metrikleri | Dosya, eşleşme ve benzersiz içerik |
+| [53 - Olay Kimliği ve Zaman Penceresinde Alarm Tekilleştirme](labs/53-event-identity-time-windows-and-alert-deduplication/notes.tr.md) | Olay birleştirme | Hash, olay ID ve makine/zaman farkları |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -243,5 +245,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 52 — Content-Hash Deduplication and Alert Counts**
-- [English notes](labs/52-content-hash-deduplication-and-alert-counts/notes.md) · [Türkçe notlar](labs/52-content-hash-deduplication-and-alert-counts/notes.tr.md) · [YARA rules](labs/52-content-hash-deduplication-and-alert-counts/rules.yar) · [Evaluator](labs/52-content-hash-deduplication-and-alert-counts/evaluate.py)
+- **Lab 53 — Event Identity, Time Windows and Alert Deduplication**
+- [English notes](labs/53-event-identity-time-windows-and-alert-deduplication/notes.md) · [Türkçe notlar](labs/53-event-identity-time-windows-and-alert-deduplication/notes.tr.md) · [YARA rules](labs/53-event-identity-time-windows-and-alert-deduplication/rules.yar) · [Evaluator](labs/53-event-identity-time-windows-and-alert-deduplication/evaluate.py)
