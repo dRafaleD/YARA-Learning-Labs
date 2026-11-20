@@ -79,6 +79,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [53 - Event Identity and Time-Window Deduplication](labs/53-event-identity-time-windows-and-alert-deduplication/notes.md) | Alert engineering | Compare raw, event, content and time-bucket counts |
 | [54 - Delayed Events and Conflicting IDs](labs/54-delayed-events-conflicting-ids-and-alert-deduplication/notes.md) | Alert engineering | Replay and conflicting record accounting |
 | [55 - Event-Time Watermarks and Late Alert Reconciliation](labs/55-event-time-watermarks-and-late-alert-reconciliation/notes.md) | Alert engineering | Event-time watermark and late evidence retention |
+| [56 - Watermark Finalization and Late Evidence](labs/56-watermark-finalization-and-late-evidence-reconciliation/notes.md) | Alert engineering | Revise prior counts for late observations |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -199,6 +200,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [53 - Olay Kimliği ve Zaman Penceresinde Alarm Tekilleştirme](labs/53-event-identity-time-windows-and-alert-deduplication/notes.tr.md) | Olay birleştirme | Hash, olay ID ve makine/zaman farkları |
 | [54 - Geciken Olay ve Kimlik Çakışması](labs/54-delayed-events-conflicting-ids-and-alert-deduplication/notes.tr.md) | Alarm korelasyonu | Event ve ingestion zamanı, çelişkili olaylar |
 | [55 - Watermark ile Geciken Alarm Uzlaştırma](labs/55-event-time-watermarks-and-late-alert-reconciliation/notes.tr.md) | Olay akışı | Gecikmiş ve çelişkili alarm kayıtları |
+| [56 - Watermark Kapanışı ve Geç Kanıt Uzlaştırma](labs/56-watermark-finalization-and-late-evidence-reconciliation/notes.tr.md) | Olay akışı | Finalize edilmiş zaman aralığının tekrar değerlendirilmesi |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -249,5 +251,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 55 — Event-Time Watermarks and Late Alert Reconciliation**
-- [English notes](labs/55-event-time-watermarks-and-late-alert-reconciliation/notes.md) · [Türkçe notlar](labs/55-event-time-watermarks-and-late-alert-reconciliation/notes.tr.md) · [YARA rules](labs/55-event-time-watermarks-and-late-alert-reconciliation/rules.yar) · [Evaluator](labs/55-event-time-watermarks-and-late-alert-reconciliation/evaluate.py)
+- **Lab 56 — Watermark Finalization and Late-Evidence Reconciliation**
+- [English notes](labs/56-watermark-finalization-and-late-evidence-reconciliation/notes.md) · [Türkçe notlar](labs/56-watermark-finalization-and-late-evidence-reconciliation/notes.tr.md) · [YARA rules](labs/56-watermark-finalization-and-late-evidence-reconciliation/rules.yar) · [Evaluator](labs/56-watermark-finalization-and-late-evidence-reconciliation/evaluate.py)
