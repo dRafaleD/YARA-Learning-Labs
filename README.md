@@ -82,6 +82,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [56 - Watermark Finalization and Late Evidence](labs/56-watermark-finalization-and-late-evidence-reconciliation/notes.md) | Alert engineering | Revise prior counts for late observations |
 | [57 - Versioned Alert Snapshots and Late Corrections](labs/57-versioned-alert-snapshots-and-late-corrections/notes.md) | Alert engineering | Revisioned counts for late evidence |
 | [58 - Rule-Version Pinning and Alert Comparison](labs/58-rule-version-pinning-and-alert-comparison/notes.md) | Detection engineering | Compare pinned rules on the same safe batch |
+| [59 - Canary Rule Rollout and Regression Gates](labs/59-yara-canary-rule-rollout-and-regression-gates/notes.md) | Detection engineering | Pin three harmless rulesets and gate changes |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -205,6 +206,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [56 - Watermark Kapanışı ve Geç Kanıt Uzlaştırma](labs/56-watermark-finalization-and-late-evidence-reconciliation/notes.tr.md) | Olay akışı | Finalize edilmiş zaman aralığının tekrar değerlendirilmesi |
 | [57 - Sürümlü Alarm Özetleri ve Geç Düzeltmeler](labs/57-versioned-alert-snapshots-and-late-corrections/notes.tr.md) | Olay akışı | Kapanan zaman aralıklarında sürümlü düzeltme |
 | [58 - Kural Sürümü ve Alarm Karşılaştırma](labs/58-rule-version-pinning-and-alert-comparison/notes.tr.md) | Alarm sürümü | Aynı corpus üzerinde V1/V2 YARA analizi |
+| [59 - Canary Kural Yayını ve Regresyon Kontrolü](labs/59-yara-canary-rule-rollout-and-regression-gates/notes.tr.md) | Detection engineering | YARA V1/V2/V3 canary kararları |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -255,5 +257,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 58 — Rule-Version Pinning and Alert Comparison**
-- [English notes](labs/58-rule-version-pinning-and-alert-comparison/notes.md) · [Türkçe notlar](labs/58-rule-version-pinning-and-alert-comparison/notes.tr.md) · [YARA V1](labs/58-rule-version-pinning-and-alert-comparison/rules_v1.yar) · [YARA V2](labs/58-rule-version-pinning-and-alert-comparison/rules_v2.yar) · [Evaluator](labs/58-rule-version-pinning-and-alert-comparison/evaluate.py)
+- **Lab 59 — YARA Canary Rule Rollout and Regression Gates**
+- [English notes](labs/59-yara-canary-rule-rollout-and-regression-gates/notes.md) · [Türkçe notlar](labs/59-yara-canary-rule-rollout-and-regression-gates/notes.tr.md) · [YARA V1](labs/59-yara-canary-rule-rollout-and-regression-gates/rules_v1.yar) · [YARA V2](labs/59-yara-canary-rule-rollout-and-regression-gates/rules_v2.yar) · [YARA V3](labs/59-yara-canary-rule-rollout-and-regression-gates/rules_v3.yar) · [Evaluator](labs/59-yara-canary-rule-rollout-and-regression-gates/evaluate.py)
