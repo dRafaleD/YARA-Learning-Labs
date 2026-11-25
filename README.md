@@ -84,6 +84,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [58 - Rule-Version Pinning and Alert Comparison](labs/58-rule-version-pinning-and-alert-comparison/notes.md) | Detection engineering | Compare pinned rules on the same safe batch |
 | [59 - Canary Rule Rollout and Regression Gates](labs/59-yara-canary-rule-rollout-and-regression-gates/notes.md) | Detection engineering | Pin three harmless rulesets and gate changes |
 | [60 - Canary Holdout and Labeled Regression Corpus](labs/60-canary-holdout-and-labeled-regression-corpus/notes.md) | Detection engineering | Separate development and holdout results |
+| [61 - Practice Day: Labeled Corpus and Detection Metrics](labs/61-labeled-corpus-metrics-practice/notes.md) | Detection metrics | Confusion matrices and 24 sample evaluations |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -209,6 +210,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [58 - Kural Sürümü ve Alarm Karşılaştırma](labs/58-rule-version-pinning-and-alert-comparison/notes.tr.md) | Alarm sürümü | Aynı corpus üzerinde V1/V2 YARA analizi |
 | [59 - Canary Kural Yayını ve Regresyon Kontrolü](labs/59-yara-canary-rule-rollout-and-regression-gates/notes.tr.md) | Detection engineering | YARA V1/V2/V3 canary kararları |
 | [60 - Canary Holdout ve Etiketli Regresyon Kümesi](labs/60-canary-holdout-and-labeled-regression-corpus/notes.tr.md) | Detection engineering | Ayrı geliştirme ve holdout ölçümü |
+| [61 - Uygulama Günü: Etiketli Veri Kümesi ve Tespit Metrikleri](labs/61-labeled-corpus-metrics-practice/notes.tr.md) | Tespit metrikleri | Karışıklık matrisi ve 24 örnek değerlendirmesi |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -259,5 +261,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 60 — Canary Holdout and Labeled Regression Corpus**
-- [English notes](labs/60-canary-holdout-and-labeled-regression-corpus/notes.md) · [Türkçe notlar](labs/60-canary-holdout-and-labeled-regression-corpus/notes.tr.md) · [Python exercise](labs/60-canary-holdout-and-labeled-regression-corpus/evaluate.py) · [rules_v1.yar](labs/60-canary-holdout-and-labeled-regression-corpus/rules_v1.yar) · [rules_v2.yar](labs/60-canary-holdout-and-labeled-regression-corpus/rules_v2.yar)
+- **Lab 61 — Practice Day: Labeled Corpus and Detection Metrics**
+- [English notes](labs/61-labeled-corpus-metrics-practice/notes.md) · [Türkçe notlar](labs/61-labeled-corpus-metrics-practice/notes.tr.md) · [Python exercise](labs/61-labeled-corpus-metrics-practice/evaluate.py) · [rules_v1.yar](labs/61-labeled-corpus-metrics-practice/rules_v1.yar) · [rules_v2.yar](labs/61-labeled-corpus-metrics-practice/rules_v2.yar)
