@@ -86,6 +86,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [60 - Canary Holdout and Labeled Regression Corpus](labs/60-canary-holdout-and-labeled-regression-corpus/notes.md) | Detection engineering | Separate development and holdout results |
 | [61 - Practice Day: Labeled Corpus and Detection Metrics](labs/61-labeled-corpus-metrics-practice/notes.md) | Detection metrics | Confusion matrices and 24 sample evaluations |
 | [62 - Corpus Duplicates and Metric Weighting](labs/62-corpus-duplicates-and-metric-weighting/notes.md) | Detection metrics | Observation versus unique-content metrics |
+| [63 - Grouped Holdout and Corpus Label Conflicts](labs/63-grouped-holdout-and-label-conflicts/notes.md) | Corpus integrity | Detect split overlap and inconsistent labels |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -213,6 +214,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [60 - Canary Holdout ve Etiketli Regresyon Kümesi](labs/60-canary-holdout-and-labeled-regression-corpus/notes.tr.md) | Detection engineering | Ayrı geliştirme ve holdout ölçümü |
 | [61 - Uygulama Günü: Etiketli Veri Kümesi ve Tespit Metrikleri](labs/61-labeled-corpus-metrics-practice/notes.tr.md) | Tespit metrikleri | Karışıklık matrisi ve 24 örnek değerlendirmesi |
 | [62 - Veri Kümesi Tekrarları ve Metrik Ağırlıkları](labs/62-corpus-duplicates-and-metric-weighting/notes.tr.md) | Tespit metrikleri | Gözlem ve benzersiz içerik ölçümü |
+| [63 - Gruplu Holdout ve Veri Etiketi Çelişkileri](labs/63-grouped-holdout-and-label-conflicts/notes.tr.md) | Veri bütünlüğü | Küme örtüşmesi ve etiket çelişkisi |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -263,5 +265,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 62 — Corpus Duplicates and Metric Weighting**
-- [English notes](labs/62-corpus-duplicates-and-metric-weighting/notes.md) · [Türkçe notlar](labs/62-corpus-duplicates-and-metric-weighting/notes.tr.md) · [Python exercise](labs/62-corpus-duplicates-and-metric-weighting/evaluate.py) · [rules.yar](labs/62-corpus-duplicates-and-metric-weighting/rules.yar)
+- **Lab 63 — Grouped Holdout and Corpus Label Conflicts**
+- [English notes](labs/63-grouped-holdout-and-label-conflicts/notes.md) · [Türkçe notlar](labs/63-grouped-holdout-and-label-conflicts/notes.tr.md) · [Python exercise](labs/63-grouped-holdout-and-label-conflicts/evaluate.py) · [rules.yar](labs/63-grouped-holdout-and-label-conflicts/rules.yar)
