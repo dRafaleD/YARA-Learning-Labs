@@ -88,6 +88,7 @@ A YARA match means that a rule's condition was satisfied. It is **not automatica
 | [62 - Corpus Duplicates and Metric Weighting](labs/62-corpus-duplicates-and-metric-weighting/notes.md) | Detection metrics | Observation versus unique-content metrics |
 | [63 - Grouped Holdout and Corpus Label Conflicts](labs/63-grouped-holdout-and-label-conflicts/notes.md) | Corpus integrity | Detect split overlap and inconsistent labels |
 | [64 - Per-Group Detection Metrics and Aggregate Bias](labs/64-per-group-detection-metrics/notes.md) | Detection metrics | Compare pooled and per-group metrics |
+| [65 - Per-Group Macro and Micro Detection Averages](labs/65-per-group-macro-and-micro-averages/notes.md) | Detection metrics | Macro and micro recall |
 
 Future labs will continue gradually with more advanced rule composition, modules, validation, and detection-engineering exercises.
 
@@ -217,6 +218,7 @@ Bir YARA eşleşmesi, rule içindeki koşulun sağlandığını gösterir. Bir d
 | [62 - Veri Kümesi Tekrarları ve Metrik Ağırlıkları](labs/62-corpus-duplicates-and-metric-weighting/notes.tr.md) | Tespit metrikleri | Gözlem ve benzersiz içerik ölçümü |
 | [63 - Gruplu Holdout ve Veri Etiketi Çelişkileri](labs/63-grouped-holdout-and-label-conflicts/notes.tr.md) | Veri bütünlüğü | Küme örtüşmesi ve etiket çelişkisi |
 | [64 - Grup Bazlı Tespit Metrikleri ve Toplam Yanlılığı](labs/64-per-group-detection-metrics/notes.tr.md) | Tespit metrikleri | Grup bazlı ve toplam metrikler |
+| [65 - Grup Bazında Makro ve Mikro Tespit Ortalamaları](labs/65-per-group-macro-and-micro-averages/notes.tr.md) | Tespit metrikleri | Makro ve mikro recall |
 
 İlerleyen lab'lerde daha gelişmiş rule composition, module kullanımı, validation ve detection-engineering çalışmaları adım adım eklenecektir.
 
@@ -267,5 +269,5 @@ Bu repodaki açıklamalar, lab yapısı, alıştırma rule'ları ve örnek dosya
 
 ## Latest lab
 
-- **Lab 64 — Per-Group Detection Metrics and Aggregate Bias**
-- [English notes](labs/64-per-group-detection-metrics/notes.md) · [Türkçe notlar](labs/64-per-group-detection-metrics/notes.tr.md) · [Python exercise](labs/64-per-group-detection-metrics/evaluate.py) · [rules.yar](labs/64-per-group-detection-metrics/rules.yar)
+- **Lab 65 — Per-Group Macro and Micro Detection Averages**
+- [English notes](labs/65-per-group-macro-and-micro-averages/notes.md) · [Türkçe notlar](labs/65-per-group-macro-and-micro-averages/notes.tr.md) · [Python exercise](labs/65-per-group-macro-and-micro-averages/evaluate.py) · [rules.yar](labs/65-per-group-macro-and-micro-averages/rules.yar)
